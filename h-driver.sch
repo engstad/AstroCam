@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:AstroCam-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -48,6 +49,8 @@ $Comp
 L ADDI7013 U12
 U 1 1 557AD8F3
 P 2100 2200
+AR Path="/557AD8F3" Ref="U12"  Part="1" 
+AR Path="/557AD230/557AD8F3" Ref="U12"  Part="1" 
 F 0 "U12" H 2100 2950 60  0000 C CNN
 F 1 "ADDI7013" H 2100 2200 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 2200 2150 60  0001 C CNN
@@ -59,6 +62,8 @@ $Comp
 L ADDI7013 U12
 U 2 1 557B0AAF
 P 6450 2200
+AR Path="/557B0AAF" Ref="U12"  Part="2" 
+AR Path="/557AD230/557B0AAF" Ref="U12"  Part="2" 
 F 0 "U12" H 6450 2950 60  0000 C CNN
 F 1 "ADDI7013" H 6450 2200 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 6550 2150 60  0001 C CNN
@@ -94,6 +99,8 @@ $Comp
 L ADDI7013 U12
 U 3 1 557B0FDF
 P 2100 4550
+AR Path="/557B0FDF" Ref="U12"  Part="3" 
+AR Path="/557AD230/557B0FDF" Ref="U12"  Part="3" 
 F 0 "U12" H 2100 5300 60  0000 C CNN
 F 1 "ADDI7013" H 2100 4550 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 2200 4500 60  0001 C CNN
@@ -182,28 +189,17 @@ F 3 "" H 2150 6500 60  0000 C CNN
 	1    2150 6500
 	1    0    0    -1  
 $EndComp
-Text Label 3550 2750 0    60   ~ 0
+Text Label 3250 3100 0    60   ~ 0
 GND
 $Comp
-L C_Small C52
-U 1 1 557B2B4B
+L C_Small C54
+U 1 1 557B320A
 P 2150 6050
-F 0 "C52" H 2160 6120 50  0000 L CNN
+F 0 "C54" H 2160 6120 50  0000 L CNN
 F 1 "0.1uF" H 2160 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2150 6050 60  0001 C CNN
 F 3 "" H 2150 6050 60  0000 C CNN
 	1    2150 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C54
-U 1 1 557B320A
-P 2450 6050
-F 0 "C54" H 2460 6120 50  0000 L CNN
-F 1 "0.1uF" H 2460 5970 50  0000 L CNN
-F 2 "w_smd_cap:c_0603" H 2450 6050 60  0001 C CNN
-F 3 "" H 2450 6050 60  0000 C CNN
-	1    2450 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -237,7 +233,7 @@ F 1 "0.1uF" H 2460 6420 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2450 6500 60  0001 C CNN
 F 3 "" H 2450 6500 60  0000 C CNN
 	1    2450 6500
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Text Label 1450 5900 2    60   ~ 0
 3V3
@@ -279,6 +275,8 @@ $Comp
 L ADDI7013 U12
 U 4 1 557B715D
 P 4950 4500
+AR Path="/557B715D" Ref="U12"  Part="4" 
+AR Path="/557AD230/557B715D" Ref="U12"  Part="4" 
 F 0 "U12" H 4950 5250 60  0000 C CNN
 F 1 "ADDI7013" H 4950 4500 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 5050 4450 60  0001 C CNN
@@ -288,29 +286,23 @@ F 3 "" H 5050 4450 60  0000 C CNN
 $EndComp
 Text Label 4950 5700 0    60   ~ 0
 GND
-Text Notes 4550 1550 0    60   ~ 0
+Text Notes 5350 1150 0    60   ~ 0
 Analog Differential \nPair Outputs
-Text Notes 3750 1450 0    60   ~ 0
+Text Notes 2800 1200 0    60   ~ 0
 Control\n
-Text HLabel 3250 2750 0    60   Input ~ 0
+Text HLabel 3250 3100 0    60   Input ~ 0
 GND
 $Comp
 L CONN_02X12 P3
 U 1 1 557AFA24
-P 4350 2200
-F 0 "P3" H 4350 2850 50  0000 C CNN
-F 1 "CONN_02X12" V 4350 2200 50  0000 C CNN
-F 2 "w_smd_strip:bb02-hp24" H 4350 1000 60  0001 C CNN
-F 3 "" H 4350 1000 60  0000 C CNN
-	1    4350 2200
+P 1000 1400
+F 0 "P3" H 1000 2050 50  0000 C CNN
+F 1 "CONN_02X12" V 1000 1400 50  0000 C CNN
+F 2 "camera:FFC-24-0.5mm" H 1000 200 60  0001 C CNN
+F 3 "" H 1000 200 60  0000 C CNN
+	1    1000 1400
 	1    0    0    1   
 $EndComp
-NoConn ~ 4600 2350
-NoConn ~ 4600 2050
-Wire Wire Line
-	3250 2750 4100 2750
-Wire Wire Line
-	3550 2750 3550 2800
 Wire Wire Line
 	7150 1650 7500 1650
 Wire Wire Line
@@ -350,15 +342,12 @@ Wire Wire Line
 Connection ~ 1550 5900
 Wire Wire Line
 	1850 5900 1850 5950
-Wire Wire Line
-	2150 5900 2150 5950
 Connection ~ 1850 5900
 Wire Wire Line
-	2450 5900 2450 5950
-Connection ~ 2150 5900
+	2150 5900 2150 5950
 Wire Wire Line
 	2750 5900 2750 5950
-Connection ~ 2450 5900
+Connection ~ 2150 5900
 Wire Wire Line
 	3050 5900 3050 5950
 Connection ~ 2750 5900
@@ -369,9 +358,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 6150 2750 6200
 Connection ~ 2750 6200
-Wire Wire Line
-	2450 6150 2450 6200
-Connection ~ 2450 6200
 Wire Wire Line
 	2150 6150 2150 6200
 Connection ~ 2150 6200
@@ -425,97 +411,186 @@ Wire Wire Line
 Connection ~ 4250 5100
 Connection ~ 4850 5400
 Wire Wire Line
-	5650 5400 5650 3900
+	5650 5400 5650 3850
 Connection ~ 5050 5400
-Connection ~ 5650 5100
-Connection ~ 5650 5000
-Connection ~ 5650 4900
-Connection ~ 5650 4800
-Connection ~ 5650 4700
-Connection ~ 5650 4600
-Connection ~ 5650 4500
-Connection ~ 5650 4400
-Connection ~ 5650 4300
-Connection ~ 5650 4200
-Connection ~ 5650 4100
-Connection ~ 5650 4000
+Connection ~ 5650 5050
+Connection ~ 5650 4950
+Connection ~ 5650 4850
+Connection ~ 5650 4750
+Connection ~ 5650 4650
+Connection ~ 5650 4550
+Connection ~ 5650 4450
+Connection ~ 5650 4350
+Connection ~ 5650 4250
+Connection ~ 5650 4150
+Connection ~ 5650 4050
+Connection ~ 5650 3950
 Wire Wire Line
 	4950 5400 4950 5700
 Connection ~ 4950 5400
 Wire Wire Line
-	4600 1650 5750 1650
+	2800 2550 3700 2550
 Wire Wire Line
-	4600 1750 5750 1750
+	2800 2650 3800 2650
+Connection ~ 5650 5150
+$Comp
+L CONN_01X24 P2
+U 1 1 557E7FB2
+P 4250 1300
+F 0 "P2" H 4250 2550 50  0000 C CNN
+F 1 "CONN_01X24" V 4350 1300 50  0000 C CNN
+F 2 "camera:FFC-24-0.5mm" V 4250 1300 60  0000 C CNN
+F 3 "" H 4250 1300 60  0000 C CNN
+	1    4250 1300
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	4600 1850 5750 1850
+	2800 1650 3100 1650
 Wire Wire Line
-	4600 1950 5750 1950
+	3100 1650 3100 1500
 Wire Wire Line
-	4600 2150 5750 2150
+	2800 1750 3200 1750
 Wire Wire Line
-	4600 2250 5750 2250
+	3200 1750 3200 1500
 Wire Wire Line
-	4600 2450 5750 2450
+	2800 1850 3300 1850
 Wire Wire Line
-	4600 2550 5750 2550
+	3300 1850 3300 1500
 Wire Wire Line
-	4600 2650 5750 2650
+	2800 1950 3400 1950
 Wire Wire Line
-	4600 2750 5750 2750
+	3400 1950 3400 1500
 Wire Wire Line
-	2800 1650 4100 1650
+	2800 2050 3500 2050
 Wire Wire Line
-	2800 1750 4100 1750
+	3500 2050 3500 1500
 Wire Wire Line
-	2800 1850 4100 1850
+	3700 2550 3700 1500
 Wire Wire Line
-	2800 1950 4100 1950
+	3800 2650 3800 1500
 Wire Wire Line
-	2800 2050 4100 2050
+	2800 2750 3900 2750
 Wire Wire Line
-	2800 2200 3450 2200
+	3900 2750 3900 1500
 Wire Wire Line
-	3450 2200 3450 2150
+	2800 2200 4000 2200
 Wire Wire Line
-	3450 2150 4100 2150
+	4000 2200 4000 1500
 Wire Wire Line
-	2800 2300 3550 2300
+	2800 2300 4100 2300
 Wire Wire Line
-	3550 2300 3550 2250
+	4100 2300 4100 1500
 Wire Wire Line
-	3550 2250 4100 2250
+	2800 2400 4200 2400
 Wire Wire Line
-	2800 2400 3650 2400
+	4200 2400 4200 1500
 Wire Wire Line
-	3650 2400 3650 2350
+	3250 3100 5400 3100
 Wire Wire Line
-	3650 2350 4100 2350
+	3600 3100 3600 1500
 Wire Wire Line
-	2800 2550 2950 2550
+	4300 3100 4300 1500
+Connection ~ 3600 3100
 Wire Wire Line
-	2950 2550 2950 2500
+	5400 3100 5400 1500
+Connection ~ 4300 3100
 Wire Wire Line
-	2950 2500 3750 2500
+	5750 1650 4400 1650
 Wire Wire Line
-	3750 2500 3750 2450
+	4400 1650 4400 1500
 Wire Wire Line
-	3750 2450 4100 2450
+	5750 1750 4500 1750
 Wire Wire Line
-	2800 2650 2900 2650
+	4500 1750 4500 1500
 Wire Wire Line
-	2900 2650 2900 2600
+	5750 1850 4600 1850
 Wire Wire Line
-	2900 2600 3050 2600
+	4600 1850 4600 1500
 Wire Wire Line
-	3050 2600 3050 2550
+	5750 1950 4700 1950
 Wire Wire Line
-	3050 2550 4100 2550
+	4700 1950 4700 1500
 Wire Wire Line
-	2800 2750 2800 2700
+	5750 2150 4800 2150
 Wire Wire Line
-	2800 2700 2950 2700
+	4800 2150 4800 1500
 Wire Wire Line
-	2950 2700 2950 2650
+	5750 2250 4900 2250
 Wire Wire Line
-	2950 2650 4100 2650
+	4900 2250 4900 1500
+Wire Wire Line
+	5750 2450 5000 2450
+Wire Wire Line
+	5000 2450 5000 1500
+Wire Wire Line
+	5750 2550 5100 2550
+Wire Wire Line
+	5100 2550 5100 1500
+Wire Wire Line
+	5750 2650 5200 2650
+Wire Wire Line
+	5200 2650 5200 1500
+Wire Wire Line
+	5750 2750 5300 2750
+Wire Wire Line
+	5300 2750 5300 1500
+Text Label 5500 1650 0    60   ~ 0
+A0+
+Text Label 5500 1750 0    60   ~ 0
+A0-
+Text Label 5500 1850 0    60   ~ 0
+A1+
+Text Label 5500 1950 0    60   ~ 0
+A1-
+Text Label 5500 2150 0    60   ~ 0
+TCLK+
+Text Label 5500 2250 0    60   ~ 0
+TCLK-
+Text Label 5500 2450 0    60   ~ 0
+B0+
+Text Label 5500 2550 0    60   ~ 0
+B0-
+Text Label 5500 2650 0    60   ~ 0
+B1+
+Text Label 5500 2750 0    60   ~ 0
+B1-
+Text Label 2800 1650 0    60   ~ 0
+CLI
+Text Label 2800 1750 0    60   ~ 0
+GP01
+Text Label 2800 1850 0    60   ~ 0
+GP02
+Text Label 2800 1950 0    60   ~ 0
+GP03
+Text Label 2800 2050 0    60   ~ 0
+GP04
+Text Label 2800 2200 0    60   ~ 0
+SYNC
+Text Label 2800 2300 0    60   ~ 0
+VD
+Text Label 2800 2400 0    60   ~ 0
+HD
+Text Label 2800 2550 0    60   ~ 0
+SCK
+Text Label 2800 2650 0    60   ~ 0
+SDATA
+Text Label 2800 2750 0    60   ~ 0
+SL
+$Comp
+L C_Small C52
+U 1 1 557E9A62
+P 2450 6050
+F 0 "C52" H 2460 6120 50  0000 L CNN
+F 1 "0.1uF" H 2460 5970 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 2450 6050 60  0001 C CNN
+F 3 "" H 2450 6050 60  0000 C CNN
+	1    2450 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5950 2450 5900
+Connection ~ 2450 5900
+Wire Wire Line
+	2450 6150 2450 6200
+Connection ~ 2450 6200
 $EndSCHEMATC
