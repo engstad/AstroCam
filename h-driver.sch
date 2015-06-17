@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -46,12 +46,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ADDI7013 U12
+L ADDI7013 U?
 U 1 1 557AD8F3
 P 2100 2200
-AR Path="/557AD8F3" Ref="U12"  Part="1" 
-AR Path="/557AD230/557AD8F3" Ref="U12"  Part="1" 
-F 0 "U12" H 2100 2950 60  0000 C CNN
+AR Path="/557AD8F3" Ref="U?"  Part="1" 
+AR Path="/557AD230/557AD8F3" Ref="U11"  Part="1" 
+F 0 "U11" H 2100 2950 60  0000 C CNN
 F 1 "ADDI7013" H 2100 2200 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 2200 2150 60  0001 C CNN
 F 3 "" H 2200 2150 60  0000 C CNN
@@ -59,49 +59,25 @@ F 3 "" H 2200 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADDI7013 U12
+L ADDI7013 U?
 U 2 1 557B0AAF
 P 6450 2200
-AR Path="/557B0AAF" Ref="U12"  Part="2" 
-AR Path="/557AD230/557B0AAF" Ref="U12"  Part="2" 
-F 0 "U12" H 6450 2950 60  0000 C CNN
+AR Path="/557B0AAF" Ref="U?"  Part="2" 
+AR Path="/557AD230/557B0AAF" Ref="U11"  Part="2" 
+F 0 "U11" H 6450 2950 60  0000 C CNN
 F 1 "ADDI7013" H 6450 2200 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 6550 2150 60  0001 C CNN
 F 3 "" H 6550 2150 60  0000 C CNN
 	2    6450 2200
 	1    0    0    -1  
 $EndComp
-Text HLabel 7500 1650 2    60   Input ~ 0
-H1
-Text HLabel 7500 1750 2    60   Input ~ 0
-H2
-Text HLabel 7500 1850 2    60   Input ~ 0
-H3
-Text HLabel 7500 1950 2    60   Input ~ 0
-H4
-Text HLabel 7500 2050 2    60   Input ~ 0
-HL1
-Text HLabel 7500 2150 2    60   Input ~ 0
-HL2
-Text HLabel 7500 2250 2    60   Input ~ 0
-RG1
-Text HLabel 7500 2350 2    60   Input ~ 0
-RG2
-Text HLabel 8650 2500 2    60   Input ~ 0
-INPA+
-Text HLabel 8650 2700 2    60   Input ~ 0
-INPB+
-Text HLabel 7500 2700 2    60   Input ~ 0
-INPA-
-Text HLabel 7500 2800 2    60   Input ~ 0
-INPB-
 $Comp
-L ADDI7013 U12
+L ADDI7013 U?
 U 3 1 557B0FDF
 P 2100 4550
-AR Path="/557B0FDF" Ref="U12"  Part="3" 
-AR Path="/557AD230/557B0FDF" Ref="U12"  Part="3" 
-F 0 "U12" H 2100 5300 60  0000 C CNN
+AR Path="/557B0FDF" Ref="U?"  Part="3" 
+AR Path="/557AD230/557B0FDF" Ref="U11"  Part="3" 
+F 0 "U11" H 2100 5300 60  0000 C CNN
 F 1 "ADDI7013" H 2100 4550 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 2200 4500 60  0001 C CNN
 F 3 "" H 2200 4500 60  0000 C CNN
@@ -109,10 +85,10 @@ F 3 "" H 2200 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C58
+L C C48
 U 1 1 557B103C
 P 8200 2500
-F 0 "C58" H 8225 2600 50  0000 L CNN
+F 0 "C48" H 8225 2600 50  0000 L CNN
 F 1 "0.1u" H 8225 2400 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 8238 2350 30  0001 C CNN
 F 3 "" H 8200 2500 60  0000 C CNN
@@ -120,23 +96,21 @@ F 3 "" H 8200 2500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C59
+L C C49
 U 1 1 557B105D
 P 8200 2700
-F 0 "C59" H 8225 2800 50  0000 L CNN
+F 0 "C49" H 8225 2800 50  0000 L CNN
 F 1 "0.1u" H 8225 2600 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 8238 2550 30  0001 C CNN
 F 3 "" H 8200 2700 60  0000 C CNN
 	1    8200 2700
 	0    1    1    0   
 $EndComp
-Text HLabel 1250 5900 0    60   Input ~ 0
-3V3
 $Comp
-L C_Small C48
+L C_Small C38
 U 1 1 557B1270
 P 1550 6050
-F 0 "C48" H 1560 6120 50  0000 L CNN
+F 0 "C38" H 1560 6120 50  0000 L CNN
 F 1 "0.1uF" H 1560 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 1550 6050 60  0001 C CNN
 F 3 "" H 1550 6050 60  0000 C CNN
@@ -144,23 +118,21 @@ F 3 "" H 1550 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C50
+L C_Small C40
 U 1 1 557B1343
 P 1850 6050
-F 0 "C50" H 1860 6120 50  0000 L CNN
+F 0 "C40" H 1860 6120 50  0000 L CNN
 F 1 "0.1uF" H 1860 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 1850 6050 60  0001 C CNN
 F 3 "" H 1850 6050 60  0000 C CNN
 	1    1850 6050
 	1    0    0    -1  
 $EndComp
-Text HLabel 1250 6350 0    60   Input ~ 0
-1V8
 $Comp
-L C_Small C49
+L C_Small C39
 U 1 1 557B1F86
 P 1550 6500
-F 0 "C49" H 1560 6570 50  0000 L CNN
+F 0 "C39" H 1560 6570 50  0000 L CNN
 F 1 "0.1uF" H 1560 6420 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 1550 6500 60  0001 C CNN
 F 3 "" H 1550 6500 60  0000 C CNN
@@ -168,10 +140,10 @@ F 3 "" H 1550 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C51
+L C_Small C41
 U 1 1 557B211B
 P 1850 6500
-F 0 "C51" H 1860 6570 50  0000 L CNN
+F 0 "C41" H 1860 6570 50  0000 L CNN
 F 1 "0.1uF" H 1860 6420 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 1850 6500 60  0001 C CNN
 F 3 "" H 1850 6500 60  0000 C CNN
@@ -179,23 +151,23 @@ F 3 "" H 1850 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C53
+L C_Small C43
 U 1 1 557B220F
 P 2150 6500
-F 0 "C53" H 2160 6570 50  0000 L CNN
+F 0 "C43" H 2160 6570 50  0000 L CNN
 F 1 "0.1uF" H 2160 6420 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2150 6500 60  0001 C CNN
 F 3 "" H 2150 6500 60  0000 C CNN
 	1    2150 6500
 	1    0    0    -1  
 $EndComp
-Text Label 3250 3100 0    60   ~ 0
+Text Label 6500 3500 0    60   ~ 0
 GND
 $Comp
-L C_Small C54
+L C_Small C42
 U 1 1 557B320A
 P 2150 6050
-F 0 "C54" H 2160 6120 50  0000 L CNN
+F 0 "C42" H 2160 6120 50  0000 L CNN
 F 1 "0.1uF" H 2160 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2150 6050 60  0001 C CNN
 F 3 "" H 2150 6050 60  0000 C CNN
@@ -203,10 +175,10 @@ F 3 "" H 2150 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C57
+L C_Small C47
 U 1 1 557B336A
 P 3050 6050
-F 0 "C57" H 3060 6120 50  0000 L CNN
+F 0 "C47" H 3060 6120 50  0000 L CNN
 F 1 "4.7uF" H 3060 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 3050 6050 60  0001 C CNN
 F 3 "" H 3050 6050 60  0000 C CNN
@@ -214,10 +186,10 @@ F 3 "" H 3050 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C56
+L C_Small C46
 U 1 1 557B3531
 P 2750 6050
-F 0 "C56" H 2760 6120 50  0000 L CNN
+F 0 "C46" H 2760 6120 50  0000 L CNN
 F 1 "0.1uF" H 2760 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2750 6050 60  0001 C CNN
 F 3 "" H 2750 6050 60  0000 C CNN
@@ -225,10 +197,10 @@ F 3 "" H 2750 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C55
+L C_Small C45
 U 1 1 557B39CA
 P 2450 6500
-F 0 "C55" H 2460 6570 50  0000 L CNN
+F 0 "C45" H 2460 6570 50  0000 L CNN
 F 1 "0.1uF" H 2460 6420 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2450 6500 60  0001 C CNN
 F 3 "" H 2450 6500 60  0000 C CNN
@@ -272,12 +244,12 @@ GND
 Text Label 1300 6350 0    60   ~ 0
 1V8
 $Comp
-L ADDI7013 U12
+L ADDI7013 U?
 U 4 1 557B715D
 P 4950 4500
-AR Path="/557B715D" Ref="U12"  Part="4" 
-AR Path="/557AD230/557B715D" Ref="U12"  Part="4" 
-F 0 "U12" H 4950 5250 60  0000 C CNN
+AR Path="/557B715D" Ref="U?"  Part="4" 
+AR Path="/557AD230/557B715D" Ref="U11"  Part="4" 
+F 0 "U11" H 4950 5250 60  0000 C CNN
 F 1 "ADDI7013" H 4950 4500 60  0000 C CNN
 F 2 "camera:csp-bga-bc-76-3" H 5050 4450 60  0001 C CNN
 F 3 "" H 5050 4450 60  0000 C CNN
@@ -286,23 +258,10 @@ F 3 "" H 5050 4450 60  0000 C CNN
 $EndComp
 Text Label 4950 5700 0    60   ~ 0
 GND
-Text Notes 5350 1150 0    60   ~ 0
+Text Notes 4550 1100 0    60   ~ 0
 Analog Differential \nPair Outputs
-Text Notes 2800 1200 0    60   ~ 0
+Text Notes 3450 1050 0    60   ~ 0
 Control\n
-Text HLabel 3250 3100 0    60   Input ~ 0
-GND
-$Comp
-L CONN_02X12 P3
-U 1 1 557AFA24
-P 1000 1400
-F 0 "P3" H 1000 2050 50  0000 C CNN
-F 1 "CONN_02X12" V 1000 1400 50  0000 C CNN
-F 2 "camera:FFC-24-0.5mm" H 1000 200 60  0001 C CNN
-F 3 "" H 1000 200 60  0000 C CNN
-	1    1000 1400
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7150 1650 7500 1650
 Wire Wire Line
@@ -433,17 +392,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 2650 3800 2650
 Connection ~ 5650 5150
-$Comp
-L CONN_01X24 P2
-U 1 1 557E7FB2
-P 4250 1300
-F 0 "P2" H 4250 2550 50  0000 C CNN
-F 1 "CONN_01X24" V 4350 1300 50  0000 C CNN
-F 2 "camera:FFC-24-0.5mm" V 4250 1300 60  0000 C CNN
-F 3 "" H 4250 1300 60  0000 C CNN
-	1    4250 1300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2800 1650 3100 1650
 Wire Wire Line
@@ -465,35 +413,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 2050 3500 1500
 Wire Wire Line
-	3700 2550 3700 1500
+	2800 2750 3600 2750
 Wire Wire Line
-	3800 2650 3800 1500
-Wire Wire Line
-	2800 2750 3900 2750
-Wire Wire Line
-	3900 2750 3900 1500
-Wire Wire Line
-	2800 2200 4000 2200
-Wire Wire Line
-	4000 2200 4000 1500
-Wire Wire Line
-	2800 2300 4100 2300
-Wire Wire Line
-	4100 2300 4100 1500
-Wire Wire Line
-	2800 2400 4200 2400
-Wire Wire Line
-	4200 2400 4200 1500
-Wire Wire Line
-	3250 3100 5400 3100
-Wire Wire Line
-	3600 3100 3600 1500
-Wire Wire Line
-	4300 3100 4300 1500
-Connection ~ 3600 3100
-Wire Wire Line
-	5400 3100 5400 1500
-Connection ~ 4300 3100
+	2800 2200 4100 2200
 Wire Wire Line
 	5750 1650 4400 1650
 Wire Wire Line
@@ -577,10 +499,10 @@ SDATA
 Text Label 2800 2750 0    60   ~ 0
 SL
 $Comp
-L C_Small C52
+L C_Small C44
 U 1 1 557E9A62
 P 2450 6050
-F 0 "C52" H 2460 6120 50  0000 L CNN
+F 0 "C44" H 2460 6120 50  0000 L CNN
 F 1 "0.1uF" H 2460 5970 50  0000 L CNN
 F 2 "w_smd_cap:c_0603" H 2450 6050 60  0001 C CNN
 F 3 "" H 2450 6050 60  0000 C CNN
@@ -593,4 +515,138 @@ Connection ~ 2450 5900
 Wire Wire Line
 	2450 6150 2450 6200
 Connection ~ 2450 6200
+$Comp
+L CONN_01X10 P3
+U 1 1 558012C2
+P 4850 1300
+F 0 "P3" H 4850 1850 50  0000 C CNN
+F 1 "CONN_01X10" V 4950 1300 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_10" H 4850 1300 60  0001 C CNN
+F 3 "" H 4850 1300 60  0000 C CNN
+	1    4850 1300
+	0    -1   -1   0   
+$EndComp
+Text Label 7200 1650 0    60   ~ 0
+H1
+Text Label 7200 1750 0    60   ~ 0
+H2
+Text Label 7200 1850 0    60   ~ 0
+H3
+Text Label 7200 1950 0    60   ~ 0
+H4
+Text Label 7200 2050 0    60   ~ 0
+HL1
+Text Label 7200 2150 0    60   ~ 0
+HL2
+Text Label 7200 2250 0    60   ~ 0
+RG1
+Text Label 7200 2350 0    60   ~ 0
+RG2
+Text Label 8450 2500 0    60   ~ 0
+IN_A+
+Text Label 8450 2700 0    60   ~ 0
+IN_B+
+Text Label 7200 2700 0    60   ~ 0
+IN_A-
+Text Label 7200 2800 0    60   ~ 0
+IN_B-
+Text Label 6500 3600 0    60   ~ 0
+3V3
+Text Label 6500 3700 0    60   ~ 0
+1V8
+Text Label 7950 4350 2    60   ~ 0
+H1
+Text Label 7950 4250 2    60   ~ 0
+H2
+Text Label 7950 4150 2    60   ~ 0
+H3
+Text Label 7950 4050 2    60   ~ 0
+H4
+Text Label 7950 4450 2    60   ~ 0
+HL1
+Text Label 7950 3950 2    60   ~ 0
+HL2
+Text Label 7950 4550 2    60   ~ 0
+RG1
+Text Label 7950 3850 2    60   ~ 0
+RG2
+Text Label 7950 3550 2    60   ~ 0
+IN_A+
+Text Label 7950 3450 2    60   ~ 0
+IN_A-
+Text Label 7950 3650 2    60   ~ 0
+IN_B+
+Text Label 7950 3750 2    60   ~ 0
+IN_B-
+$Comp
+L CONN_01X12 P5
+U 1 1 55801ABA
+P 8150 4000
+F 0 "P5" H 8150 4650 50  0000 C CNN
+F 1 "CONN_01X12" V 8250 4000 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_12" H 8150 4000 60  0001 C CNN
+F 3 "" H 8150 4000 60  0000 C CNN
+	1    8150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P2
+U 1 1 55802A9E
+P 3300 1300
+F 0 "P2" H 3300 1600 50  0000 C CNN
+F 1 "CONN_01X05" V 3400 1300 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_5" H 3300 1300 60  0001 C CNN
+F 3 "" H 3300 1300 60  0000 C CNN
+	1    3300 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 55802B35
+P 3700 1650
+F 0 "P4" H 3700 1850 50  0000 C CNN
+F 1 "CONN_01X03" V 3800 1650 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 3700 1650 60  0001 C CNN
+F 3 "" H 3700 1650 60  0000 C CNN
+	1    3700 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 2750 3600 1850
+Wire Wire Line
+	3700 2550 3700 1850
+Wire Wire Line
+	3800 2650 3800 1850
+$Comp
+L CONN_01X03 P6
+U 1 1 55802DCC
+P 4000 1300
+F 0 "P6" H 4000 1500 50  0000 C CNN
+F 1 "CONN_01X03" V 4100 1300 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 4000 1300 60  0001 C CNN
+F 3 "" H 4000 1300 60  0000 C CNN
+	1    4000 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X03 P7
+U 1 1 55802F4C
+P 6300 3600
+F 0 "P7" H 6300 3800 50  0000 C CNN
+F 1 "CONN_01X03" V 6400 3600 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 6300 3600 60  0001 C CNN
+F 3 "" H 6300 3600 60  0000 C CNN
+	1    6300 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1500 3900 2300
+Wire Wire Line
+	4100 2200 4100 1500
+Wire Wire Line
+	4000 2400 4000 1500
+Wire Wire Line
+	3900 2300 2800 2300
+Wire Wire Line
+	2800 2400 4000 2400
 $EndSCHEMATC
