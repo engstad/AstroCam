@@ -161,7 +161,7 @@ F 3 "" H 2150 6500 60  0000 C CNN
 	1    2150 6500
 	1    0    0    -1  
 $EndComp
-Text Label 6500 3500 0    60   ~ 0
+Text Label 3600 4350 0    60   ~ 0
 GND
 $Comp
 L C_Small C42
@@ -550,43 +550,43 @@ Text Label 7200 2700 0    60   ~ 0
 IN_A-
 Text Label 7200 2800 0    60   ~ 0
 IN_B-
-Text Label 6500 3600 0    60   ~ 0
+Text Label 3600 4450 0    60   ~ 0
 3V3
-Text Label 6500 3700 0    60   ~ 0
+Text Label 3600 4550 0    60   ~ 0
 1V8
-Text Label 7950 4350 2    60   ~ 0
+Text Label 9450 2600 2    60   ~ 0
 H1
-Text Label 7950 4250 2    60   ~ 0
+Text Label 9450 2500 2    60   ~ 0
 H2
-Text Label 7950 4150 2    60   ~ 0
+Text Label 9450 2400 2    60   ~ 0
 H3
-Text Label 7950 4050 2    60   ~ 0
+Text Label 9450 2300 2    60   ~ 0
 H4
-Text Label 7950 4450 2    60   ~ 0
+Text Label 9450 2700 2    60   ~ 0
 HL1
-Text Label 7950 3950 2    60   ~ 0
+Text Label 9450 2200 2    60   ~ 0
 HL2
-Text Label 7950 4550 2    60   ~ 0
+Text Label 9450 2800 2    60   ~ 0
 RG1
-Text Label 7950 3850 2    60   ~ 0
+Text Label 9450 2100 2    60   ~ 0
 RG2
-Text Label 7950 3550 2    60   ~ 0
+Text Label 9450 1800 2    60   ~ 0
 IN_A+
-Text Label 7950 3450 2    60   ~ 0
+Text Label 9450 1700 2    60   ~ 0
 IN_A-
-Text Label 7950 3650 2    60   ~ 0
+Text Label 9450 1900 2    60   ~ 0
 IN_B+
-Text Label 7950 3750 2    60   ~ 0
+Text Label 9450 2000 2    60   ~ 0
 IN_B-
 $Comp
 L CONN_01X12 P5
 U 1 1 55801ABA
-P 8150 4000
-F 0 "P5" H 8150 4650 50  0000 C CNN
-F 1 "CONN_01X12" V 8250 4000 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_12" H 8150 4000 60  0001 C CNN
-F 3 "" H 8150 4000 60  0000 C CNN
-	1    8150 4000
+P 9650 2250
+F 0 "P5" H 9650 2900 50  0000 C CNN
+F 1 "CONN_01X12" V 9750 2250 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_12" H 9650 2250 60  0001 C CNN
+F 3 "" H 9650 2250 60  0000 C CNN
+	1    9650 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -631,12 +631,12 @@ $EndComp
 $Comp
 L CONN_01X03 P7
 U 1 1 55802F4C
-P 6300 3600
-F 0 "P7" H 6300 3800 50  0000 C CNN
-F 1 "CONN_01X03" V 6400 3600 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_3" H 6300 3600 60  0001 C CNN
-F 3 "" H 6300 3600 60  0000 C CNN
-	1    6300 3600
+P 3400 4450
+F 0 "P7" H 3400 4650 50  0000 C CNN
+F 1 "CONN_01X03" V 3500 4450 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 3400 4450 60  0001 C CNN
+F 3 "" H 3400 4450 60  0000 C CNN
+	1    3400 4450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -649,4 +649,49 @@ Wire Wire Line
 	3900 2300 2800 2300
 Wire Wire Line
 	2800 2400 4000 2400
+Text Label 6800 4600 0    60   ~ 0
+GND
+Text Label 6800 4200 0    60   ~ 0
+3V3
+Text Label 6800 5050 0    60   ~ 0
+1V8
+Wire Wire Line
+	6800 4600 6450 4600
+Wire Wire Line
+	6450 4200 6800 4200
+Wire Wire Line
+	6800 5050 6450 5050
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5580E99E
+P 6450 4600
+F 0 "#FLG04" H 6450 4695 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 4780 50  0000 C CNN
+F 2 "" H 6450 4600 60  0000 C CNN
+F 3 "" H 6450 4600 60  0000 C CNN
+	1    6450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5580E9DE
+P 6450 4200
+F 0 "#FLG05" H 6450 4295 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 4380 50  0000 C CNN
+F 2 "" H 6450 4200 60  0000 C CNN
+F 3 "" H 6450 4200 60  0000 C CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5580EA1E
+P 6450 5050
+F 0 "#FLG06" H 6450 5145 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 5230 50  0000 C CNN
+F 2 "" H 6450 5050 60  0000 C CNN
+F 3 "" H 6450 5050 60  0000 C CNN
+	1    6450 5050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

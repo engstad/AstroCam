@@ -68,8 +68,6 @@ Text Label 8400 3450 0    60   ~ 0
 GND
 Text Label 7850 1950 1    60   ~ 0
 GND
-Text Label 2350 1000 0    60   ~ 0
-12V
 Text Label 8400 2800 0    60   ~ 0
 SUB
 Text Label 7600 3800 3    60   ~ 0
@@ -102,10 +100,6 @@ GND
 Connection ~ 9000 2900
 Text Label 9200 2900 0    60   ~ 0
 -7V
-Text HLabel 6550 2300 0    60   Input ~ 0
-RG_A
-Text HLabel 6550 3000 0    60   Input ~ 0
-RG_B
 Wire Wire Line
 	6550 2300 6700 2300
 $Comp
@@ -136,16 +130,6 @@ Wire Wire Line
 	6900 3000 7050 3000
 Wire Wire Line
 	6900 2300 7050 2300
-Text HLabel 6550 2400 0    60   Input ~ 0
-LH1_1
-Text HLabel 6550 2500 0    60   Input ~ 0
-H1S_1
-Text HLabel 6550 2600 0    60   Input ~ 0
-H1T_1
-Text HLabel 6550 2700 0    60   Input ~ 0
-H2S_1
-Text HLabel 6550 2800 0    60   Input ~ 0
-H2T_1
 Wire Wire Line
 	6550 2400 7050 2400
 Wire Wire Line
@@ -156,16 +140,6 @@ Wire Wire Line
 	6550 2700 7050 2700
 Wire Wire Line
 	6550 2800 7050 2800
-Text HLabel 6550 3100 0    60   Input ~ 0
-LH1_2
-Text HLabel 6550 3200 0    60   Input ~ 0
-H1S_2
-Text HLabel 6550 3300 0    60   Input ~ 0
-H1T_2
-Text HLabel 6550 3400 0    60   Input ~ 0
-H2S_2
-Text HLabel 6550 3500 0    60   Input ~ 0
-H2T_2
 Wire Wire Line
 	6550 3100 7050 3100
 Wire Wire Line
@@ -268,50 +242,10 @@ Text Label 8100 1950 3    60   ~ 0
 GND
 Wire Wire Line
 	8400 2400 9200 2400
-Text HLabel 9200 2400 2    60   Input ~ 0
-CCD_OUT1
-Text HLabel 9200 2550 2    60   Input ~ 0
-CCD_OUT2
 Wire Wire Line
 	9200 2550 8400 2550
 Wire Wire Line
-	2700 1000 2250 1000
-Text HLabel 2250 1000 0    60   Input ~ 0
-12V
-Text HLabel 2250 1350 0    60   Input ~ 0
--7V
-Text HLabel 2250 1700 0    60   Input ~ 0
-GND
-Wire Wire Line
-	2250 1350 2700 1350
-Wire Wire Line
-	2250 1700 2700 1700
-Text Label 2300 1350 0    60   ~ 0
--7V
-Text Label 2300 1700 0    60   ~ 0
-GND
-Text HLabel 3250 1000 0    60   Input ~ 0
-5V0
-Wire Wire Line
-	3250 1000 3600 1000
-Text Label 3600 1000 0    60   ~ 0
-5V0
-Text HLabel 1600 4050 0    60   Input ~ 0
-XV4
-Text HLabel 1600 3950 0    60   Input ~ 0
-XV1
-Text HLabel 1600 3850 0    60   Input ~ 0
-XSGV3
-Text HLabel 1600 3650 0    60   Input ~ 0
-XV3
-Wire Wire Line
 	1600 3550 2700 3550
-Text HLabel 1600 3550 0    60   Input ~ 0
-XSGV2
-Text HLabel 1600 3350 0    60   Input ~ 0
-XV2
-Text HLabel 1600 3150 0    60   Input ~ 0
-XSHT
 Wire Wire Line
 	1600 3650 2700 3650
 Connection ~ 5200 3150
@@ -498,4 +432,120 @@ F 3 "" H 3300 3850 60  0000 C CNN
 	1    3300 3850
 	1    0    0    -1  
 $EndComp
+Text Label 1850 3150 0    60   ~ 0
+XSHT
+Text Label 1850 3350 0    60   ~ 0
+XV2
+Text Label 1850 3550 0    60   ~ 0
+XSGV2
+Text Label 1850 3650 0    60   ~ 0
+XV3
+Text Label 1850 3850 0    60   ~ 0
+XSGV3
+Text Label 1850 3950 0    60   ~ 0
+XV1
+Text Label 1850 4050 0    60   ~ 0
+XV4
+Text Label 8800 2400 0    60   ~ 0
+CCD_OUT1
+Text Label 8750 2550 0    60   ~ 0
+CCD_OUT2
+Text Label 6550 2300 0    60   ~ 0
+RG_1
+Text Label 6550 2400 0    60   ~ 0
+LH1_1
+Text Label 6550 2500 0    60   ~ 0
+H1S_1
+Text Label 6550 2600 0    60   ~ 0
+H1T_1
+Text Label 6550 2700 0    60   ~ 0
+H2S_1
+Text Label 6550 2800 0    60   ~ 0
+H2T_1
+Text Label 6550 3000 0    60   ~ 0
+RG_2
+Text Label 6550 3100 0    60   ~ 0
+LH1_2
+Text Label 6550 3200 0    60   ~ 0
+H1S_2
+Text Label 6550 3300 0    60   ~ 0
+H1T_2
+Text Label 6550 3400 0    60   ~ 0
+H2S_2
+Text Label 6550 3500 0    60   ~ 0
+H2T_2
+Text Label 4650 750  0    60   ~ 0
+12V
+Text Label 4650 850  0    60   ~ 0
+-7V
+Text Label 4650 950  0    60   ~ 0
+GND
+Text Label 4650 1050 0    60   ~ 0
+5V0
+Text Label 4650 1650 0    60   ~ 0
+XSHT
+Text Label 4650 1250 0    60   ~ 0
+XV1
+Text Label 4650 1350 0    60   ~ 0
+XV2
+Text Label 4650 1450 0    60   ~ 0
+XV3
+Text Label 4650 1550 0    60   ~ 0
+XV4
+Text Label 4650 1750 0    60   ~ 0
+XSGV2
+Text Label 4650 1850 0    60   ~ 0
+XSGV3
+Text Label 4650 1950 0    60   ~ 0
+CCD_OUT1
+Text Label 4650 1150 0    60   ~ 0
+CCD_OUT2
+Text Label 5700 750  0    60   ~ 0
+RG_1
+Text Label 5700 850  0    60   ~ 0
+LH1_1
+Text Label 5700 950  0    60   ~ 0
+H1S_1
+Text Label 5700 1050 0    60   ~ 0
+H1T_1
+Text Label 5700 1150 0    60   ~ 0
+H2S_1
+Text Label 5700 1250 0    60   ~ 0
+H2T_1
+Text Label 5700 1850 0    60   ~ 0
+RG_2
+Text Label 5700 1750 0    60   ~ 0
+LH1_2
+Text Label 5700 1650 0    60   ~ 0
+H1S_2
+Text Label 5700 1550 0    60   ~ 0
+H1T_2
+Text Label 5700 1450 0    60   ~ 0
+H2S_2
+Text Label 5700 1350 0    60   ~ 0
+H2T_2
+$Comp
+L CONN_01X12 P11
+U 1 1 5584CDCA
+P 5500 1300
+F 0 "P11" H 5500 1950 50  0000 C CNN
+F 1 "CONN_01X12" V 5600 1300 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_12" H 5500 1300 60  0001 C CNN
+F 3 "" H 5500 1300 60  0000 C CNN
+	1    5500 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X14 P10
+U 1 1 5584CE51
+P 4450 1400
+F 0 "P10" H 4450 2150 50  0000 C CNN
+F 1 "CONN_01X14" V 4550 1400 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_14" H 4450 1400 60  0001 C CNN
+F 3 "" H 4450 1400 60  0000 C CNN
+	1    4450 1400
+	-1   0    0    -1  
+$EndComp
+Text Label 4650 2050 0    60   ~ 0
+GND
 $EndSCHEMATC
