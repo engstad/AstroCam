@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -161,7 +161,7 @@ F 3 "" H 2150 6500 60  0000 C CNN
 	1    2150 6500
 	1    0    0    -1  
 $EndComp
-Text Label 3600 4350 0    60   ~ 0
+Text Label 10150 1350 2    60   ~ 0
 GND
 $Comp
 L C_Small C42
@@ -258,9 +258,9 @@ F 3 "" H 5050 4450 60  0000 C CNN
 $EndComp
 Text Label 4950 5700 0    60   ~ 0
 GND
-Text Notes 4550 1100 0    60   ~ 0
+Text Notes 5750 1100 0    60   ~ 0
 Analog Differential \nPair Outputs
-Text Notes 3450 1050 0    60   ~ 0
+Text Notes 2200 1050 0    60   ~ 0
 Control\n
 Wire Wire Line
 	7150 1650 7500 1650
@@ -387,75 +387,69 @@ Connection ~ 5650 3950
 Wire Wire Line
 	4950 5400 4950 5700
 Connection ~ 4950 5400
-Wire Wire Line
-	2800 2550 3700 2550
-Wire Wire Line
-	2800 2650 3800 2650
 Connection ~ 5650 5150
 Wire Wire Line
-	2800 1650 3100 1650
+	2800 1650 3350 1650
 Wire Wire Line
-	3100 1650 3100 1500
+	3350 1650 3350 1350
 Wire Wire Line
-	2800 1750 3200 1750
+	2800 1750 3450 1750
 Wire Wire Line
-	3200 1750 3200 1500
+	3450 1750 3450 1350
 Wire Wire Line
-	2800 1850 3300 1850
+	2800 1850 3550 1850
 Wire Wire Line
-	3300 1850 3300 1500
+	3550 1850 3550 1350
 Wire Wire Line
-	2800 1950 3400 1950
+	2800 1950 3650 1950
 Wire Wire Line
-	3400 1950 3400 1500
+	3650 1950 3650 1350
 Wire Wire Line
-	2800 2050 3500 2050
+	2800 2050 3750 2050
 Wire Wire Line
-	3500 2050 3500 1500
+	3750 2050 3750 1350
 Wire Wire Line
-	2800 2750 3600 2750
+	2800 2200 5050 2200
 Wire Wire Line
-	2800 2200 4100 2200
+	5750 1650 3850 1650
 Wire Wire Line
-	5750 1650 4400 1650
+	3850 1650 3850 1350
 Wire Wire Line
-	4400 1650 4400 1500
+	5750 1750 3950 1750
 Wire Wire Line
-	5750 1750 4500 1750
+	3950 1750 3950 1350
 Wire Wire Line
-	4500 1750 4500 1500
+	5750 1850 4050 1850
 Wire Wire Line
-	5750 1850 4600 1850
+	4050 1850 4050 1350
 Wire Wire Line
-	4600 1850 4600 1500
+	5750 1950 4150 1950
 Wire Wire Line
-	5750 1950 4700 1950
+	4150 1950 4150 1350
 Wire Wire Line
-	4700 1950 4700 1500
+	5750 2150 4250 2150
 Wire Wire Line
-	5750 2150 4800 2150
+	4250 2150 4250 1350
 Wire Wire Line
-	4800 2150 4800 1500
+	5750 2250 4350 2250
 Wire Wire Line
-	5750 2250 4900 2250
+	4350 2250 4350 1350
 Wire Wire Line
-	4900 2250 4900 1500
+	5750 2450 4450 2450
 Wire Wire Line
-	5750 2450 5000 2450
+	4450 2450 4450 1350
 Wire Wire Line
-	5000 2450 5000 1500
+	5750 2550 4550 2550
 Wire Wire Line
-	5750 2550 5100 2550
+	4550 2550 4550 1350
 Wire Wire Line
-	5100 2550 5100 1500
+	5750 2650 4650 2650
 Wire Wire Line
-	5750 2650 5200 2650
+	4650 2650 4650 1350
 Wire Wire Line
-	5200 2650 5200 1500
+	5750 2750 4750 2750
 Wire Wire Line
-	5750 2750 5300 2750
-Wire Wire Line
-	5300 2750 5300 1500
+	4750 2750 4750 1350
 Text Label 5500 1650 0    60   ~ 0
 A0+
 Text Label 5500 1750 0    60   ~ 0
@@ -515,17 +509,6 @@ Connection ~ 2450 5900
 Wire Wire Line
 	2450 6150 2450 6200
 Connection ~ 2450 6200
-$Comp
-L CONN_01X10 P3
-U 1 1 558012C2
-P 4850 1300
-F 0 "P3" H 4850 1850 50  0000 C CNN
-F 1 "CONN_01X10" V 4950 1300 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_10" H 4850 1300 60  0001 C CNN
-F 3 "" H 4850 1300 60  0000 C CNN
-	1    4850 1300
-	0    -1   -1   0   
-$EndComp
 Text Label 7200 1650 0    60   ~ 0
 H1
 Text Label 7200 1750 0    60   ~ 0
@@ -550,105 +533,44 @@ Text Label 7200 2700 0    60   ~ 0
 IN_A-
 Text Label 7200 2800 0    60   ~ 0
 IN_B-
-Text Label 3600 4450 0    60   ~ 0
+Text Label 10150 1250 2    60   ~ 0
 3V3
-Text Label 3600 4550 0    60   ~ 0
+Text Label 10150 1150 2    60   ~ 0
 1V8
-Text Label 9450 2600 2    60   ~ 0
+Text Label 10150 2350 2    60   ~ 0
 H1
-Text Label 9450 2500 2    60   ~ 0
+Text Label 10150 2250 2    60   ~ 0
 H2
-Text Label 9450 2400 2    60   ~ 0
+Text Label 10150 2150 2    60   ~ 0
 H3
-Text Label 9450 2300 2    60   ~ 0
+Text Label 10150 2050 2    60   ~ 0
 H4
-Text Label 9450 2700 2    60   ~ 0
+Text Label 10150 2450 2    60   ~ 0
 HL1
-Text Label 9450 2200 2    60   ~ 0
+Text Label 10150 1950 2    60   ~ 0
 HL2
-Text Label 9450 2800 2    60   ~ 0
+Text Label 10150 2550 2    60   ~ 0
 RG1
-Text Label 9450 2100 2    60   ~ 0
+Text Label 10150 1850 2    60   ~ 0
 RG2
-Text Label 9450 1800 2    60   ~ 0
+Text Label 10150 1550 2    60   ~ 0
 IN_A+
-Text Label 9450 1700 2    60   ~ 0
+Text Label 10150 1450 2    60   ~ 0
 IN_A-
-Text Label 9450 1900 2    60   ~ 0
+Text Label 10150 1650 2    60   ~ 0
 IN_B+
-Text Label 9450 2000 2    60   ~ 0
+Text Label 10150 1750 2    60   ~ 0
 IN_B-
-$Comp
-L CONN_01X12 P5
-U 1 1 55801ABA
-P 9650 2250
-F 0 "P5" H 9650 2900 50  0000 C CNN
-F 1 "CONN_01X12" V 9750 2250 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_12" H 9650 2250 60  0001 C CNN
-F 3 "" H 9650 2250 60  0000 C CNN
-	1    9650 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X05 P2
-U 1 1 55802A9E
-P 3300 1300
-F 0 "P2" H 3300 1600 50  0000 C CNN
-F 1 "CONN_01X05" V 3400 1300 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_5" H 3300 1300 60  0001 C CNN
-F 3 "" H 3300 1300 60  0000 C CNN
-	1    3300 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X03 P4
-U 1 1 55802B35
-P 3700 1650
-F 0 "P4" H 3700 1850 50  0000 C CNN
-F 1 "CONN_01X03" V 3800 1650 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_3" H 3700 1650 60  0001 C CNN
-F 3 "" H 3700 1650 60  0000 C CNN
-	1    3700 1650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	3600 2750 3600 1850
+	4850 1350 4850 2300
 Wire Wire Line
-	3700 2550 3700 1850
+	5050 2200 5050 1350
 Wire Wire Line
-	3800 2650 3800 1850
-$Comp
-L CONN_01X03 P6
-U 1 1 55802DCC
-P 4000 1300
-F 0 "P6" H 4000 1500 50  0000 C CNN
-F 1 "CONN_01X03" V 4100 1300 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_3" H 4000 1300 60  0001 C CNN
-F 3 "" H 4000 1300 60  0000 C CNN
-	1    4000 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X03 P7
-U 1 1 55802F4C
-P 3400 4450
-F 0 "P7" H 3400 4650 50  0000 C CNN
-F 1 "CONN_01X03" V 3500 4450 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_3" H 3400 4450 60  0001 C CNN
-F 3 "" H 3400 4450 60  0000 C CNN
-	1    3400 4450
-	-1   0    0    1   
-$EndComp
+	4950 2400 4950 1350
 Wire Wire Line
-	3900 1500 3900 2300
+	4850 2300 2800 2300
 Wire Wire Line
-	4100 2200 4100 1500
-Wire Wire Line
-	4000 2400 4000 1500
-Wire Wire Line
-	3900 2300 2800 2300
-Wire Wire Line
-	2800 2400 4000 2400
+	2800 2400 4950 2400
 Text Label 6800 4600 0    60   ~ 0
 GND
 Text Label 6800 4200 0    60   ~ 0
@@ -693,5 +615,33 @@ F 2 "" H 6450 5050 60  0000 C CNN
 F 3 "" H 6450 5050 60  0000 C CNN
 	1    6450 5050
 	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X18 P3
+U 1 1 55886037
+P 10350 2000
+F 0 "P3" H 10350 2950 50  0000 C CNN
+F 1 "CONN_01X18" V 10450 2000 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_18" H 10350 2000 60  0001 C CNN
+F 3 "" H 10350 2000 60  0000 C CNN
+	1    10350 2000
+	1    0    0    -1  
+$EndComp
+Text Label 10150 2650 2    60   ~ 0
+SL
+Text Label 10150 2850 2    60   ~ 0
+SDATA
+Text Label 10150 2750 2    60   ~ 0
+SCK
+$Comp
+L CONN_01X18 P2
+U 1 1 5588671F
+P 4200 1150
+F 0 "P2" H 4200 2100 50  0000 C CNN
+F 1 "CONN_01X18" V 4300 1150 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_18" H 4200 1150 60  0001 C CNN
+F 3 "" H 4200 1150 60  0000 C CNN
+	1    4200 1150
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

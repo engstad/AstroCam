@@ -1,0 +1,131 @@
+Cmp-Mod V01 Created by PcbNew   date = Mon 22 Jun 2015 11:14:59 PM PDT
+
+BeginCmp
+TimeStamp = 557FB0C4
+Path = /557AD230/557B1270
+Reference = C38;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB0D0
+Path = /557AD230/557B1F86
+Reference = C39;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB0DC
+Path = /557AD230/557B1343
+Reference = C40;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB0E8
+Path = /557AD230/557B211B
+Reference = C41;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB0F4
+Path = /557AD230/557B320A
+Reference = C42;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB100
+Path = /557AD230/557B220F
+Reference = C43;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB10C
+Path = /557AD230/557E9A62
+Reference = C44;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB118
+Path = /557AD230/557B39CA
+Reference = C45;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB124
+Path = /557AD230/557B3531
+Reference = C46;
+ValeurCmp = 0.1uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB130
+Path = /557AD230/557B336A
+Reference = C47;
+ValeurCmp = 4.7uF;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB13C
+Path = /557AD230/557B103C
+Reference = C48;
+ValeurCmp = 0.1u;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 557FB148
+Path = /557AD230/557B105D
+Reference = C49;
+ValeurCmp = 0.1u;
+IdModule  = w_smd_cap:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 55809488
+Path = 
+Reference = REF**;
+ValeurCmp = Logo;
+IdModule  = Symbols:Symbol_OSHW-Logo_SilkScreen;
+EndCmp
+
+BeginCmp
+TimeStamp = 55884486
+Path = /557AD230/5588671F
+Reference = P2;
+ValeurCmp = CONN_01X18;
+IdModule  = w_pin_strip:pin_strip_18;
+EndCmp
+
+BeginCmp
+TimeStamp = 558844A1
+Path = /557AD230/55886037
+Reference = P3;
+ValeurCmp = CONN_01X18;
+IdModule  = w_pin_strip:pin_strip_18;
+EndCmp
+
+BeginCmp
+TimeStamp = 55890E4F
+Path = /557AD230/557AD8F3
+Reference = U11;
+ValeurCmp = ADDI7013;
+IdModule  = camera:csp-bga-bc-76-3;
+EndCmp
+
+EndListe
