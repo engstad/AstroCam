@@ -68,7 +68,7 @@ U 1 1 557EF73C
 P 2150 3300
 F 0 "P1" H 2150 3450 50  0000 C CNN
 F 1 "CONN_01X02" V 2250 3300 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_2" H 2150 3300 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2150 3300 60  0001 C CNN
 F 3 "" H 2150 3300 60  0000 C CNN
 	1    2150 3300
 	-1   0    0    1   
