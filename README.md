@@ -9,3 +9,7 @@ For now I have been focusing on three things:
 3. creating the PCB for the CCD camera chip.
 
 ![alt tag](./pcb/breakout-addi.jpg "ADDI7013 breakout board")
+
+So far, only V0.2 of the ADDI breakout board has been produced and I'm in the process of testing it:
+
+![alt tag](https://lh5.googleusercontent.com/-4O_j30c7Nnw/VcjmWiaJ_oI/AAAAAAAADPE/50bkggAgAtM/w942-h530-no/15%2B-%2B1 "Pop board")
