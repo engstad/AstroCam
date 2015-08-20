@@ -1,9 +1,9 @@
 (kicad_pcb (version 4) (host pcbnew "(2015-08-12 BZR 6089)-product")
 
   (general
-    (links 98)
+    (links 0)
     (no_connects 2)
-    (area 34.985599 44.237599 80.805601 59.577601)
+    (area 34.750599 41.021 81.032201 59.969401)
     (thickness 1.6)
     (drawings 6)
     (tracks 462)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.1524)
+    (last_trace_width 0.127)
     (user_trace_width 0.127)
     (user_trace_width 0.1524)
     (user_trace_width 0.1778)

@@ -51,4 +51,6 @@
   (lib (name w_to)(type KiCad)(uri "$(KISYSMOD)/walter/w_to.pretty")(options "")(descr Walters))
   (lib (name w_vacuum)(type KiCad)(uri "$(KISYSMOD)/walter/w_vacuum.pretty")(options "")(descr Walters))
   (lib (name camera)(type KiCad)(uri /home/engstad/Electronics/proj/lib/camera.pretty)(options "")(descr ""))
+  (lib (name xess)(type KiCad)(uri C:\elec\AstroCam\lib\xess.pretty)(options "")(descr ""))
+  (lib (name numato_kicad_lib)(type Legacy)(uri C:\elec\AstroCam\lib\numato_kicad_lib.mod)(options "")(descr ""))
 )
