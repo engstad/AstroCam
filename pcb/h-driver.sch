@@ -29,7 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:camera
+LIBS:engstad
+LIBS:sony
 LIBS:AstroCam-cache
 EELAYER 25 0
 EELAYER END
@@ -53,7 +54,7 @@ AR Path="/557AD8F3" Ref="U?"  Part="1"
 AR Path="/557AD230/557AD8F3" Ref="U11"  Part="1" 
 F 0 "U11" H 2100 2950 60  0000 C CNN
 F 1 "ADDI7013" H 2100 2200 60  0000 C CNN
-F 2 "camera:csp-bga-bc-76-3" H 2200 2150 60  0001 C CNN
+F 2 "engstad:csp-bga-bc-76-3" H 2200 2150 60  0001 C CNN
 F 3 "" H 2200 2150 60  0000 C CNN
 	1    2100 2200
 	1    0    0    -1  
@@ -66,7 +67,7 @@ AR Path="/557B0AAF" Ref="U?"  Part="2"
 AR Path="/557AD230/557B0AAF" Ref="U11"  Part="2" 
 F 0 "U11" H 6450 2950 60  0000 C CNN
 F 1 "ADDI7013" H 6450 2200 60  0000 C CNN
-F 2 "camera:csp-bga-bc-76-3" H 6550 2150 60  0001 C CNN
+F 2 "engstad:csp-bga-bc-76-3" H 6550 2150 60  0001 C CNN
 F 3 "" H 6550 2150 60  0000 C CNN
 	2    6450 2200
 	1    0    0    -1  
@@ -79,7 +80,7 @@ AR Path="/557B0FDF" Ref="U?"  Part="3"
 AR Path="/557AD230/557B0FDF" Ref="U11"  Part="3" 
 F 0 "U11" H 2100 5300 60  0000 C CNN
 F 1 "ADDI7013" H 2100 4550 60  0000 C CNN
-F 2 "camera:csp-bga-bc-76-3" H 2200 4500 60  0001 C CNN
+F 2 "engstad:csp-bga-bc-76-3" H 2200 4500 60  0001 C CNN
 F 3 "" H 2200 4500 60  0000 C CNN
 	3    2100 4550
 	1    0    0    -1  
@@ -251,7 +252,7 @@ AR Path="/557B715D" Ref="U?"  Part="4"
 AR Path="/557AD230/557B715D" Ref="U11"  Part="4" 
 F 0 "U11" H 4950 5250 60  0000 C CNN
 F 1 "ADDI7013" H 4950 4500 60  0000 C CNN
-F 2 "camera:csp-bga-bc-76-3" H 5050 4450 60  0001 C CNN
+F 2 "engstad:csp-bga-bc-76-3" H 5050 4450 60  0001 C CNN
 F 3 "" H 5050 4450 60  0000 C CNN
 	4    4950 4500
 	1    0    0    -1  

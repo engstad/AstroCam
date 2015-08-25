@@ -1,4 +1,4 @@
-update=Thu 30 Jul 2015 07:43:41 PM PDT
+update=Sun 23 Aug 2015 06:41:32 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -60,4 +60,5 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=camera/camera
+LibName31=engstad/engstad/engstad
+LibName32=restricted/sony/sony

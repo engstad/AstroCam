@@ -29,7 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:camera
+LIBS:engstad
+LIBS:sony
 LIBS:AstroCam-cache
 EELAYER 25 0
 EELAYER END

@@ -29,7 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:camera
+LIBS:engstad
+LIBS:sony
 LIBS:AstroCam-cache
 EELAYER 25 0
 EELAYER END
@@ -224,7 +225,7 @@ U 1 1 55789A9B
 P 8200 3450
 F 0 "U8" H 7950 3750 60  0000 C CNN
 F 1 "LMZ10500" H 8200 3450 60  0000 C CNN
-F 2 "camera:llp-8" H 8200 3450 60  0001 C CNN
+F 2 "engstad:llp-8" H 8200 3450 60  0001 C CNN
 F 3 "" H 8200 3450 60  0000 C CNN
 	1    8200 3450
 	1    0    0    -1  
