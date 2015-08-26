@@ -13,3 +13,10 @@ For now I have been focusing on three things:
 So far, only V0.2 of the ADDI breakout board has been produced and I'm in the process of testing it:
 
 ![alt tag](https://lh5.googleusercontent.com/-4O_j30c7Nnw/VcjmWiaJ_oI/AAAAAAAADPE/50bkggAgAtM/w942-h530-no/15%2B-%2B1 "Pop board")
+
+And it works!
+
+![alt tag](https://lh5.googleusercontent.com/-uVIj86fr0O0/VddgaiSKTcI/AAAAAAAADQM/cjXHsGOp-Wk/w2139-h1203-no/15%2B-%2B2 "Measurements")
+![alt tag](https://lh5.googleusercontent.com/-Q_xBNylFTrE/VddgaoBVgDI/AAAAAAAADQI/rpZG_g9dkAQ/w2139-h1203-no/15%2B-%2B1)
+
+So, that means that I'll start working on the camera parts next.
