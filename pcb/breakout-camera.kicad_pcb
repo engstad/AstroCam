@@ -1,7 +1,7 @@
-(kicad_pcb (version 4) (host pcbnew 0.201508241000+6117~28~ubuntu15.04.1-product)
+(kicad_pcb (version 4) (host pcbnew "(2015-08-21 BZR 6112)-product")
 
   (general
-    (links 118)
+    (links 0)
     (no_connects 0)
     (area 51.104279 38.419519 101.204281 88.519521)
     (thickness 1.6)
@@ -74,7 +74,7 @@
     (pad_to_mask_clearance 0)
     (aux_axis_origin 76.15428 63.46952)
     (grid_origin 76.15428 63.46952)
-    (visible_elements FFFEFA29)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x0f0ff_80000001)
       (usegerberextensions false)

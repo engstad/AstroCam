@@ -47,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ADDI7013 U?
+L ADDI7013-RESCUE-AstroCam U?
 U 1 1 557AD8F3
 P 2100 2200
 AR Path="/557AD8F3" Ref="U?"  Part="1" 
@@ -60,7 +60,7 @@ F 3 "" H 2200 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADDI7013 U?
+L ADDI7013-RESCUE-AstroCam U?
 U 2 1 557B0AAF
 P 6450 2200
 AR Path="/557B0AAF" Ref="U?"  Part="2" 
@@ -73,7 +73,7 @@ F 3 "" H 6550 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADDI7013 U?
+L ADDI7013-RESCUE-AstroCam U?
 U 3 1 557B0FDF
 P 2100 4550
 AR Path="/557B0FDF" Ref="U?"  Part="3" 
@@ -245,7 +245,7 @@ GND
 Text Label 1300 6350 0    60   ~ 0
 1V8
 $Comp
-L ADDI7013 U?
+L ADDI7013-RESCUE-AstroCam U?
 U 4 1 557B715D
 P 4950 4500
 AR Path="/557B715D" Ref="U?"  Part="4" 
