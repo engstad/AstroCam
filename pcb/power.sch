@@ -64,7 +64,7 @@ U 1 1 557696DE
 P 2100 2100
 F 0 "D1" H 2100 2200 50  0000 C CNN
 F 1 "9V/5W" H 2100 2000 50  0000 C CNN
-F 2 "Diodes_SMD:Diode-SMB_Handsoldering" H 2100 2100 60  0001 C CNN
+F 2 "Diodes_SMD:SMB_Standard" H 2100 2100 60  0001 C CNN
 F 3 "" H 2100 2100 60  0000 C CNN
 	1    2100 2100
 	0    1    1    0   
@@ -136,8 +136,8 @@ F 3 "" H 4650 2700 30  0000 C CNN
 	1    4650 2700
 	1    0    0    -1  
 $EndComp
-Text Label 4750 1950 0    60   ~ 0
-5V5
+Text Label 4550 1950 0    60   ~ 0
+OUT_5V5
 $Comp
 L TPS56x200 U7
 U 1 1 5576ECD1
@@ -431,6 +431,197 @@ F 3 "" H 2250 4400 60  0000 C CNN
 	1    2250 4400
 	-1   0    0    1   
 $EndComp
+$Comp
+L R R2
+U 1 1 557FBB11
+P 2500 4750
+F 0 "R2" V 2580 4750 50  0000 C CNN
+F 1 "324k" V 2500 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2430 4750 30  0001 C CNN
+F 3 "" H 2500 4750 30  0000 C CNN
+	1    2500 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 557FBC34
+P 2500 4550
+F 0 "C5" H 2525 4650 50  0000 L CNN
+F 1 "47pF" H 2525 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2538 4400 30  0001 C CNN
+F 3 "" H 2500 4550 60  0000 C CNN
+F 4 "TDK C1608X5R1A105K" H 2500 4550 60  0001 C CNN "Component"
+	1    2500 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 557FCA31
+P 2250 5050
+F 0 "C3" H 2275 5150 50  0000 L CNN
+F 1 "47pF" H 2275 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2288 4900 30  0001 C CNN
+F 3 "" H 2250 5050 60  0000 C CNN
+F 4 "TDK C1608X5R1A105K" H 2250 5050 60  0001 C CNN "Component"
+	1    2250 5050
+	1    0    0    -1  
+$EndComp
+Text Label 1400 4850 2    60   ~ 0
+-7V
+$Comp
+L C C7
+U 1 1 557FD386
+P 3300 5050
+F 0 "C7" H 3325 5150 50  0000 L CNN
+F 1 "100nF" H 3325 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3338 4900 30  0001 C CNN
+F 3 "" H 3300 5050 60  0000 C CNN
+F 4 "TDK C1608X5R1A105K" H 3300 5050 60  0001 C CNN "Component"
+	1    3300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 557FDA0A
+P 4550 4250
+F 0 "R7" V 4630 4250 50  0000 C CNN
+F 1 "324k" V 4550 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4480 4250 30  0001 C CNN
+F 3 "" H 4550 4250 30  0000 C CNN
+	1    4550 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C9
+U 1 1 557FE29C
+P 4800 4950
+F 0 "C9" H 4825 5050 50  0000 L CNN
+F 1 "4.7uF" H 4825 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4838 4800 30  0001 C CNN
+F 3 "" H 4800 4950 60  0000 C CNN
+F 4 "TAIYO YUDEN TMK316BJ475ML-TR" H 4800 4950 60  0001 C CNN "Component"
+	1    4800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 557FE9A1
+P 5050 4250
+F 0 "C10" H 5075 4350 50  0000 L CNN
+F 1 "0.1uF" H 5075 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5088 4100 30  0001 C CNN
+F 3 "" H 5050 4250 60  0000 C CNN
+F 4 "TDK C1608X5R1A105K" H 5050 4250 60  0001 C CNN "Component"
+	1    5050 4250
+	1    0    0    -1  
+$EndComp
+Text Label 4500 4550 0    60   ~ 0
++12V
+Text Label 1550 4600 0    60   ~ 0
+GND
+Text Label 4050 5300 0    60   ~ 0
+GND
+Text Label 4300 4050 0    60   ~ 0
+CAP
+Text Label 4300 4300 1    60   ~ 0
+FBP
+Text Label 2400 4200 0    60   ~ 0
+DN
+Text Label 2700 4750 0    60   ~ 0
+FBN
+Text Label 5300 4550 0    60   ~ 0
+12V
+Text Label 5050 6400 0    60   ~ 0
+5V0
+Text Label 10200 1700 0    60   ~ 0
+1V8
+Text Label 9400 3400 0    60   ~ 0
+3V3
+Text Label 1400 1250 0    60   ~ 0
+V_BAT
+$Comp
+L CONN_01X06 P8
+U 1 1 55815355
+P 7250 5100
+F 0 "P8" H 7250 5450 50  0000 C CNN
+F 1 "CONN_01X06" V 7350 5100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 7250 5100 60  0001 C CNN
+F 3 "" H 7250 5100 60  0000 C CNN
+	1    7250 5100
+	1    0    0    -1  
+$EndComp
+Text Label 7050 4950 2    60   ~ 0
+5V0
+Text Label 7050 5150 2    60   ~ 0
+12V
+Text Label 7050 5250 2    60   ~ 0
+-7V
+Text Label 7050 4850 2    60   ~ 0
+3V3
+Text Label 7050 5350 2    60   ~ 0
+1V8
+$Comp
+L C C11
+U 1 1 55816528
+P 4850 6750
+F 0 "C11" H 4875 6850 50  0000 L CNN
+F 1 "10uF" H 4875 6650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4888 6600 30  0001 C CNN
+F 3 "" H 4850 6750 60  0000 C CNN
+F 4 "TDK C1608X5R1A105K" H 4850 6750 60  0001 C CNN "Component"
+	1    4850 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS2420 U1
+U 1 1 5581B080
+P 3700 2050
+AR Path="/5581B080" Ref="U1"  Part="1" 
+AR Path="/557696AD/5581B080" Ref="U1"  Part="1" 
+F 0 "U1" H 3250 2500 60  0000 C CNN
+F 1 "TPS2420" H 3700 2100 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm" H 3750 2000 60  0001 C CNN
+F 3 "" H 3750 2000 60  0000 C CNN
+	1    3700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P9
+U 1 1 5581D2B8
+P 6300 4850
+F 0 "P9" H 6300 5000 50  0000 C CNN
+F 1 "CONN_01X02" V 6400 4850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6300 4850 60  0001 C CNN
+F 3 "" H 6300 4850 60  0000 C CNN
+	1    6300 4850
+	1    0    0    -1  
+$EndComp
+Text Label 6100 4800 2    60   ~ 0
+V_BAT
+Text Label 6100 4900 2    60   ~ 0
+GND
+Text Label 7050 5050 2    60   ~ 0
+5V5
+Text Label 7450 3600 2    60   ~ 0
+VCON
+Text Label 7350 3250 2    60   ~ 0
+VREF
+NoConn ~ 7500 3300
+Text Label 2700 4850 0    60   ~ 0
+SOFT_START
+$Comp
+L JUMPER3 JP5
+U 1 1 55E616DE
+P 5300 1950
+F 0 "JP5" H 5350 1850 50  0000 L CNN
+F 1 "JUMPER3" H 5300 2050 50  0000 C BNN
+F 2 "xess:xess-JP2" H 5300 1950 60  0001 C CNN
+F 3 "" H 5300 1950 60  0000 C CNN
+	1    5300 1950
+	1    0    0    -1  
+$EndComp
+Text Label 5300 2350 0    60   ~ 0
+5V5
 Wire Wire Line
 	1700 1250 1700 1950
 Wire Wire Line
@@ -559,11 +750,6 @@ Wire Wire Line
 Connection ~ 9250 3400
 Wire Wire Line
 	7150 3250 7150 3350
-Connection ~ 8050 3950
-Connection ~ 8200 3950
-Connection ~ 8350 3950
-Wire Wire Line
-	6750 3950 9250 3950
 Connection ~ 6950 3950
 Wire Wire Line
 	1700 3050 1700 2250
@@ -580,7 +766,7 @@ Wire Wire Line
 	2850 3050 2850 2300
 Connection ~ 2850 3050
 Wire Wire Line
-	1300 3050 4650 3050
+	1300 3050 5550 3050
 Connection ~ 3900 3050
 Connection ~ 3700 3050
 Connection ~ 3500 3050
@@ -622,14 +808,11 @@ Connection ~ 4500 6400
 Wire Wire Line
 	4300 6900 4500 6900
 Wire Wire Line
-	4500 6900 4500 7200
-Wire Wire Line
-	2100 7200 4850 7200
+	4500 6800 4500 7200
 Wire Wire Line
 	3000 6900 2850 6900
 Wire Wire Line
 	2850 6900 2850 7200
-Connection ~ 3650 7200
 Wire Wire Line
 	2300 6300 2300 6550
 Connection ~ 2300 6300
@@ -667,29 +850,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 3350 2350 4050
 Connection ~ 2350 4050
-$Comp
-L R R2
-U 1 1 557FBB11
-P 2500 4750
-F 0 "R2" V 2580 4750 50  0000 C CNN
-F 1 "324k" V 2500 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2430 4750 30  0001 C CNN
-F 3 "" H 2500 4750 30  0000 C CNN
-	1    2500 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L C C5
-U 1 1 557FBC34
-P 2500 4550
-F 0 "C5" H 2525 4650 50  0000 L CNN
-F 1 "47pF" H 2525 4450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2538 4400 30  0001 C CNN
-F 3 "" H 2500 4550 60  0000 C CNN
-F 4 "TDK C1608X5R1A105K" H 2500 4550 60  0001 C CNN "Component"
-	1    2500 4550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2650 4550 2800 4550
 Wire Wire Line
@@ -709,58 +869,21 @@ Wire Wire Line
 Wire Wire Line
 	2250 4200 2650 4200
 Connection ~ 2650 4200
-$Comp
-L C C3
-U 1 1 557FCA31
-P 2250 5050
-F 0 "C3" H 2275 5150 50  0000 L CNN
-F 1 "47pF" H 2275 4950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2288 4900 30  0001 C CNN
-F 3 "" H 2250 5050 60  0000 C CNN
-F 4 "TDK C1608X5R1A105K" H 2250 5050 60  0001 C CNN "Component"
-	1    2250 5050
-	1    0    0    -1  
-$EndComp
 Connection ~ 2250 4750
 Wire Wire Line
 	2250 4850 1200 4850
 Connection ~ 2250 4850
-Text Label 1400 4850 2    60   ~ 0
--7V
 Wire Wire Line
 	2250 5200 2250 5300
 Wire Wire Line
 	2250 5300 4800 5300
 Wire Wire Line
 	3300 5300 3300 5200
-$Comp
-L C C7
-U 1 1 557FD386
-P 3300 5050
-F 0 "C7" H 3325 5150 50  0000 L CNN
-F 1 "100nF" H 3325 4950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3338 4900 30  0001 C CNN
-F 3 "" H 3300 5050 60  0000 C CNN
-F 4 "TDK C1608X5R1A105K" H 3300 5050 60  0001 C CNN "Component"
-	1    3300 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 4850 3300 4900
 Wire Wire Line
 	3800 5300 3800 4850
 Connection ~ 3300 5300
-$Comp
-L R R7
-U 1 1 557FDA0A
-P 4550 4250
-F 0 "R7" V 4630 4250 50  0000 C CNN
-F 1 "324k" V 4550 4250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4480 4250 30  0001 C CNN
-F 3 "" H 4550 4250 30  0000 C CNN
-	1    4550 4250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4300 4050 5050 4050
 Wire Wire Line
@@ -770,18 +893,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 4400 4550 4400
 Connection ~ 4550 4050
-$Comp
-L C C9
-U 1 1 557FE29C
-P 4800 4950
-F 0 "C9" H 4825 5050 50  0000 L CNN
-F 1 "4.7uF" H 4825 4850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4838 4800 30  0001 C CNN
-F 3 "" H 4800 4950 60  0000 C CNN
-F 4 "TDK C1608X5R1A105K" H 4800 4950 60  0001 C CNN "Component"
-	1    4800 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 4050 4800 4800
 Wire Wire Line
@@ -789,18 +900,6 @@ Wire Wire Line
 Connection ~ 3800 5300
 Wire Wire Line
 	4300 4550 5400 4550
-$Comp
-L C C10
-U 1 1 557FE9A1
-P 5050 4250
-F 0 "C10" H 5075 4350 50  0000 L CNN
-F 1 "0.1uF" H 5075 4150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5088 4100 30  0001 C CNN
-F 3 "" H 5050 4250 60  0000 C CNN
-F 4 "TDK C1608X5R1A105K" H 5050 4250 60  0001 C CNN "Component"
-	1    5050 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 4050 5050 4100
 Connection ~ 4800 4050
@@ -811,106 +910,14 @@ Wire Wire Line
 	4300 4450 4550 4450
 Wire Wire Line
 	4550 4450 4550 4400
-Text Label 4500 4550 0    60   ~ 0
-+12V
 Wire Wire Line
 	1550 4500 1550 4600
-Text Label 1550 4600 0    60   ~ 0
-GND
-Text Label 4050 5300 0    60   ~ 0
-GND
-Text Label 4300 4050 0    60   ~ 0
-CAP
-Text Label 4300 4300 1    60   ~ 0
-FBP
-Text Label 2400 4200 0    60   ~ 0
-DN
-Text Label 2700 4750 0    60   ~ 0
-FBN
-Text Label 5300 4550 0    60   ~ 0
-12V
-Text Label 5050 6400 0    60   ~ 0
-5V0
-Text Label 10200 1700 0    60   ~ 0
-1V8
-Text Label 9400 3400 0    60   ~ 0
-3V3
-Text Label 1400 1250 0    60   ~ 0
-V_BAT
-$Comp
-L CONN_01X06 P8
-U 1 1 55815355
-P 7250 5100
-F 0 "P8" H 7250 5450 50  0000 C CNN
-F 1 "CONN_01X06" V 7350 5100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 7250 5100 60  0001 C CNN
-F 3 "" H 7250 5100 60  0000 C CNN
-	1    7250 5100
-	1    0    0    -1  
-$EndComp
-Text Label 7050 4950 2    60   ~ 0
-5V0
-Text Label 7050 5250 2    60   ~ 0
-12V
-Text Label 7050 5150 2    60   ~ 0
--7V
-Text Label 7050 4850 2    60   ~ 0
-3V3
-Text Label 7050 5350 2    60   ~ 0
-1V8
-$Comp
-L C C11
-U 1 1 55816528
-P 4850 6750
-F 0 "C11" H 4875 6850 50  0000 L CNN
-F 1 "10uF" H 4875 6650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4888 6600 30  0001 C CNN
-F 3 "" H 4850 6750 60  0000 C CNN
-F 4 "TDK C1608X5R1A105K" H 4850 6750 60  0001 C CNN "Component"
-	1    4850 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 6400 4850 6600
 Connection ~ 4850 6400
 Wire Wire Line
 	4850 7200 4850 6900
 Connection ~ 4500 7200
-$Comp
-L TPS2420 U1
-U 1 1 5581B080
-P 3700 2050
-AR Path="/5581B080" Ref="U1"  Part="1" 
-AR Path="/557696AD/5581B080" Ref="U1"  Part="1" 
-F 0 "U1" H 3250 2500 60  0000 C CNN
-F 1 "TPS2420" H 3700 2100 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm" H 3750 2000 60  0001 C CNN
-F 3 "" H 3750 2000 60  0000 C CNN
-	1    3700 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P9
-U 1 1 5581D2B8
-P 6300 4850
-F 0 "P9" H 6300 5000 50  0000 C CNN
-F 1 "CONN_01X02" V 6400 4850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6300 4850 60  0001 C CNN
-F 3 "" H 6300 4850 60  0000 C CNN
-	1    6300 4850
-	1    0    0    -1  
-$EndComp
-Text Label 6100 4800 2    60   ~ 0
-V_BAT
-Text Label 6100 4900 2    60   ~ 0
-GND
-Text Label 7050 5050 2    60   ~ 0
-5V5
-Text Label 7450 3600 2    60   ~ 0
-VCON
-Text Label 7350 3250 2    60   ~ 0
-VREF
-NoConn ~ 7500 3300
 Wire Wire Line
 	7500 3450 7400 3450
 Wire Wire Line
@@ -936,10 +943,103 @@ Wire Wire Line
 	4400 3050 4400 2350
 Wire Wire Line
 	3300 4850 2700 4850
-Text Label 2700 4850 0    60   ~ 0
-SOFT_START
 Wire Wire Line
 	1300 1250 3700 1250
 Wire Wire Line
 	3700 1250 3700 1450
+Connection ~ 4650 3050
+Wire Wire Line
+	5550 1950 5600 1950
+Wire Wire Line
+	5300 2050 5300 2350
+Text Label 5600 1950 0    60   ~ 0
+V_BAT
+$Comp
+L CONN_01X01 P11
+U 1 1 55E6412F
+P 5750 3050
+F 0 "P11" H 5750 3150 50  0000 C CNN
+F 1 "CONN_01X01" V 5850 3050 50  0000 C CNN
+F 2 "xess:HDR_1x1" H 5750 3050 60  0001 C CNN
+F 3 "" H 5750 3050 60  0000 C CNN
+	1    5750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P12
+U 1 1 55E64D3C
+P 7250 5650
+F 0 "P12" H 7250 5750 50  0000 C CNN
+F 1 "CONN_01X01" V 7350 5650 50  0000 C CNN
+F 2 "xess:HDR_1x1" H 7250 5650 60  0001 C CNN
+F 3 "" H 7250 5650 60  0000 C CNN
+	1    7250 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 7200 3400 7200
+$Comp
+L NET-TIE T1
+U 1 1 55E667A7
+P 3650 7200
+F 0 "T1" H 3650 7050 60  0000 C CNN
+F 1 "NET-TIE" H 3650 7300 60  0000 C CNN
+F 2 "Oddities:NetTie-I_SMD" H 3650 7350 60  0001 C CNN
+F 3 "" H 3650 7350 60  0000 C CNN
+	1    3650 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 7200 5050 7200
+Connection ~ 4850 7200
+Text Label 5050 7200 0    60   ~ 0
+PGND
+Wire Wire Line
+	4300 6800 4500 6800
+Connection ~ 4500 6900
+$Comp
+L NET-TIE T2
+U 1 1 55E5E1CA
+P 8200 4300
+F 0 "T2" H 8200 4150 60  0000 C CNN
+F 1 "NET-TIE" H 8200 4400 60  0000 C CNN
+F 2 "Oddities:NetTie-I_Connected_SMD" H 8200 4450 60  0001 C CNN
+F 3 "" H 8200 4450 60  0000 C CNN
+	1    8200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3950 8050 3950
+Wire Wire Line
+	7950 3950 7950 4300
+Connection ~ 7950 3950
+Wire Wire Line
+	8450 4300 8450 3950
+Wire Wire Line
+	8350 3950 9250 3950
+Connection ~ 8450 3950
+Text Label 8700 3950 0    60   ~ 0
+SGND
+Wire Wire Line
+	7050 5650 6450 5650
+Wire Wire Line
+	6700 5800 6450 5800
+Connection ~ 6700 5650
+Text Label 6450 5650 2    60   ~ 0
+PGND
+Text Label 6450 5800 2    60   ~ 0
+SGND
+Wire Wire Line
+	6700 5800 6700 5650
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 55FA0781
+P 5300 2350
+F 0 "#FLG04" H 5300 2445 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 2530 50  0000 C CNN
+F 2 "" H 5300 2350 60  0000 C CNN
+F 3 "" H 5300 2350 60  0000 C CNN
+	1    5300 2350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
