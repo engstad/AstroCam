@@ -1016,7 +1016,7 @@ Connection ~ 7950 3950
 Wire Wire Line
 	8450 4300 8450 3950
 Wire Wire Line
-	8350 3950 9250 3950
+	8200 3950 9250 3950
 Connection ~ 8450 3950
 Text Label 8700 3950 0    60   ~ 0
 SGND
@@ -1042,4 +1042,5 @@ F 3 "" H 5300 2350 60  0000 C CNN
 	1    5300 2350
 	-1   0    0    1   
 $EndComp
+Connection ~ 8350 3950
 $EndSCHEMATC
