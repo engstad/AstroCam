@@ -1670,4 +1670,6 @@ Wire Wire Line
 Connection ~ 5750 2350
 Text Label 5700 2350 1    60   ~ 0
 H2_5V
+Text Notes 7500 3850 0    60   ~ 0
+JP1: [1-2] VO1 ->  CCD_OUT1\n     [2-3] VO1 -> ADA4800 -> CCD_OUT1\nJP3: [1-2] VOUT1 -> VO1\n     [2-3] VOUT1 -> Q1Q2 -> VO1\n\n\n
 $EndSCHEMATC
