@@ -1,0 +1,60 @@
+/* 
+
+  C15 C16 C17 C18 C19 C20 C21 C22 C23 C24 C25 C26 C27 C28 C29 C30 C31 5V0 AD0 AD1
+  |                                                                             |
+  |                                                                             |
+  |                                                                             |
+  |                                                                             |
+  |                                                                             |
+  |                                                                             |
+  CLK C00 C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 C12 C13 C14 3V3 GND 1V2 RST
+	
+CHAN-CLK 	T7   Goes to FPGA GCLK pin.
+CHAN0 		R7   Goes to FPGA GCLK pin.
+CHAN1 		R15 
+CHAN2 		R16 
+CHAN3 		M15 
+CHAN4 		M16 
+CHAN5 		K15 
+CHAN6 		K16 
+CHAN7 		J16  Goes to FPGA GCLK pin.
+CHAN8 		J14  Goes to FPGA GCLK pin.
+CHAN9 		F15
+CHAN10 		F16
+CHAN11 		C16
+CHAN12 		C15
+CHAN13 		B16
+CHAN14 		B15
+CHAN15 		T4
+CHAN16 		R2
+CHAN17 		R1
+CHAN18 		M2
+CHAN19 		M1
+CHAN20 		K3  Goes to FPGA GCLK pin.
+CHAN21 		J4  Goes to FPGA GCLK pin.
+CHAN22 		H1 
+CHAN23 		H2 
+CHAN24 		F1  Goes to FPGA GCLK pin.
+CHAN25 		F2  Goes to FPGA GCLK pin.
+CHAN26 		E1 
+CHAN27 		E2 
+CHAN28 		C1 
+CHAN29 		B1 
+CHAN30 		B2 
+CHAN31 		A2 
+*/
+
+net io_h1    loc=t7; // CLK
+net io_h2    loc=r7; // 0
+net io_xvt1  loc=r15; // 1  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+net io_xvt2  loc=r16; // 2  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+net io_xvt3  loc=m15; // 3  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+net io_xvt4  loc=m16; // 4  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+net io_yvt2  loc=k15; // 5  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+net io_yvt3  loc=k16; // 6  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+net io_thsub loc=j16; // 7  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+
+NET fpgaClk_i      LOC = A9;    # 12 MHz clock input.
+NET "fpgaClk_i" TNM_NET = "fpgaClk_i";
+TIMESPEC "TSfpgaClk_i" = PERIOD "fpgaClk_i" 12 MHz HIGH 50%;
+
