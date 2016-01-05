@@ -44,17 +44,27 @@ CHAN30 		B2
 CHAN31 		A2 
 */
 
-net io_h1    loc=t7; // CLK
-net io_h2    loc=r7; // 0
-net io_xvt1  loc=r15; // 1  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
-net io_xvt2  loc=r16; // 2  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
-net io_xvt3  loc=m15; // 3  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
-net io_xvt4  loc=m16; // 4  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
-net io_yvt2  loc=k15; // 5  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
-net io_yvt3  loc=k16; // 6  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
-net io_thsub loc=j16; // 7  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_h1    LOC=p5 | SLEW=FAST; // CLK
+NET io_h2    LOC=p6 | SLEW=FAST; // 0
+NET io_xvt1  LOC=p9; // 1  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_xvt2  LOC=p10; // 2  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_xvt3  LOC=p15; // 3  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_xvt4  LOC=p16; // 4  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_yvt2  LOC=p7; // 5  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_yvt3  LOC=p8; // 6  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_thsub LOC=p12; // 7  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
+NET io_clock LOC=p17 | SLEW=FAST; // 8
 
-NET fpgaClk_i      LOC = A9;    # 12 MHz clock input.
-NET "fpgaClk_i" TNM_NET = "fpgaClk_i";
+//NET io_a0 LOC=f15 | diff_term=TRUE | iostandard=LVDS_18;
+
+//NET io_a0p   LOC=f15; // 9
+//NET io_a0n   LOC=f16; // 10
+//NET io_a1p   LOC=c16; // 11
+//NET io_a1n   LOC=c15; // 12
+//NET io_t0p   LOC=b16; // 13
+//NET io_t0n   LOC=b15; // 14
+
+NET fpgaClk_i LOC = p14;    # 12 MHz clock input.
+NET fpgaClk_i TNM_NET = "fpgaClk_i";
 TIMESPEC "TSfpgaClk_i" = PERIOD "fpgaClk_i" 12 MHz HIGH 50%;
 

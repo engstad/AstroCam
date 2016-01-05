@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    04:47:48 08/27/2015 
-// Design Name: 
-// Module Name:    main 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 
 module main(input  fpgaClk_i,
 			output io_xvt1,
@@ -28,18 +9,20 @@ module main(input  fpgaClk_i,
 			output io_yvt3,
 			output io_h1,
 			output io_h2,
-			output io_thsub
+			output io_thsub,
+			output io_clock
 			);
 	 
    // m/d 12 MHz = 54 MHz => d = 2, m = 9, 
    // m/d 12 MHz =  6 MHz => d = 4, m = 2 
-   DCM_SP #(.CLKFX_DIVIDE(32), .CLKFX_MULTIPLY(9)) dcm(.CLKIN(fpgaClk_i), .CLKFX(clkfx), .RST(1'b0),
+   DCM_SP #(.CLKFX_DIVIDE(2), .CLKFX_MULTIPLY(9)) dcm(.CLKIN(fpgaClk_i), .CLKFX(clkfx), .RST(1'b0),
 													  .CLK0(), .CLK90(), .CLK180(), .CLK270(), .CLK2X(), .CLK2X180(),
 													  .CLKDV(), .CLKFX180(clkfx180), .LOCKED(), .PSDONE(), .STATUS(),
 													  .CLKFB(), .DSSEN(), .PSCLK(), .PSEN(1'b0), .PSINCDEC());
-   
+
    BUFGCE_1 h1_inst(.I(clkfx), .CE(~hblank), .O(h1));   
    BUFGCE   h2_inst(.I(clkfx180), .CE(~hblank), .O(h2));
+   BUFG     clk_inst(.I(clkfx), .O(clk));   
 
    ODDR2 #(.DDR_ALIGNMENT("NONE"), // Sets output alignment to "NONE", "C0" or "C1" 
 		   .INIT(1'b1),            // Sets initial state of the Q output to 1'b0 or 1'b1
@@ -66,9 +49,16 @@ module main(input  fpgaClk_i,
 				 .R(1'b0),  // 1-bit reset input
 				 .S(1'b0)   // 1-bit set input
 				 );
+
+   ODDR2 #(.DDR_ALIGNMENT("NONE"), // Sets output alignment to "NONE", "C0" or "C1" 
+		   .INIT(1'b1),            // Sets initial state of the Q output to 1'b0 or 1'b1
+		   .SRTYPE("SYNC")         // Specifies "SYNC" or "ASYNC" set/reset
+		   )  
+   oddr2_inst(.Q(oddr_clock), .C0(clk), .C1(~clk), .CE(1'b1), .D0(1'b1), .D1(1'b0), .R(1'b0), .S(1'b0));   
    
    OBUF h1_obuf(.I(oddr_h1), .O(io_h1));   
-   OBUF h2_obuf(.I(oddr_h2), .O(io_h2));   
+   OBUF h2_obuf(.I(oddr_h2), .O(io_h2));
+   OBUF clk_obuf(.I(oddr_clock), .O(io_clock));
       
    icx icx(.clk(clkfx),
 		   .reset(1'b0),

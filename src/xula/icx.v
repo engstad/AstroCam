@@ -185,9 +185,16 @@ module clpob(input [11:0] hpos, output out);
    assign out = (hpos > 359 && hpos <= 386);
 endmodule
 
-module hblank(input [11:0] hpos,
+module hblank(input        clk,
+			  input [11:0] hpos,
 			  output 	   out);
-   assign out = (hpos <= 355);   
+
+   reg hsync;
+   assign out = hsync;
+   
+   always @(posedge clk) begin
+	  hsync <= hpos == 0 ? 1 : hpos == 356 ? 0 : hsync;
+   end
 endmodule // hblank
 
 /*
@@ -235,8 +242,8 @@ module icx(input  clk,
    vt2high vth2(.state(state), .start(start), .out(rvt2));
    vt3high vth3(.state(state), .start(start), .out(rvt3));   
 
-   hblank hb(x, hblank);   
-
+   hblank hb(.clk(clk), .hpos(x), .out(hblank));
+   
    clpob clpob_mod(.hpos(x), .out(cob));
 
    theta_sub tsub_mod(.hpos(x), .out(thsub));      
