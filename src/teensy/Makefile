@@ -5,7 +5,7 @@
 # First, describe the cross-compilation environment:
 
 # Path to Teensyduino headers
-TD_DIR = $(PWD)/../Arduino/arduino-1.6.5/hardware/teensy/avr/cores/teensy3
+TD_DIR = $(HOME)/Electronics/tools/Arduino/arduino-1.6.5/hardware/teensy/avr/cores/teensy3
 BINDIR = $(TD_DIR)/../../../../tools/arm/bin/
 TARGETTYPE = arm-none-eabi
 
@@ -62,7 +62,7 @@ VPATH = $(TD_DIR)
 #########################################################################
 # Project details
 
-PROJECT=blinky
+PROJECT=main
 
 OBJECTS	= $(PROJECT).o
 
@@ -91,7 +91,7 @@ $(PROJECT).hex: $(PROJECT).elf
 	$(OBJCOPY) -R .stack -O ihex $(PROJECT).elf $(PROJECT).hex
 
 $(PROJECT).elf: $(OBJECTS) libarduino.a
-	$(CC) $(LDFLAGS) -o $(PROJECT).elf $(OBJECTS) $(LDLIBS) -L. -larduino
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $(PROJECT).elf $(LDLIBS) -L. -larduino
 
 stats: $(PROJECT).elf
 	$(SIZE) $(PROJECT).elf
@@ -110,4 +110,4 @@ run: all
 	~/bin/teensy-load -mmcu=mk20dx256 -w -s -v $(PROJECT).hex
 
 blinker:
-	~/bin/teensy-load -mmcu=mk20dx256 -w -s -v ../teensy-barebones/blinky.hex
+	~/bin/teensy-load -mmcu=mk20dx256 -w -s -v ../teensy-barebones/main.hex
