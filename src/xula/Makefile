@@ -11,19 +11,19 @@ SIL := -intstyle silent
 PRJ := icx
 
 # Smallest Chip ($11.48, 300 LABs, 2840 Cells, 221,184 RAM bits)
-CHIP := xc6slx4
+#CHIP := xc6slx4
 SPEED := 2
-PACK := tqg144
+#PACK := tqg144
 
 # Xula2
-#CHIP := xc6slx25
-#PACK := ftg256
+CHIP := xc6slx25
+PACK := ftg256
 
 PART := $(CHIP)-$(SPEED)-$(PACK)
 
 all: bit/$(PRJ).bit
 
-xst/$(PRJ).ngc: main.v icx.v $(PRJ).xst
+xst/$(PRJ).ngc: main.v icx.v rx-ddr-diff.v clk-ddr-s8-diff.v data-s8-diff.v $(PRJ).xst
 	mkdir -p xst/tmp
 	mkdir -p xst/reports
 	cd xst && $(XST) $(SIL) -ifn ../$(PRJ).xst -ofn reports/ast.syr && cd ..
@@ -62,3 +62,4 @@ clean:
 	rm -rf par
 	rm -rf trc
 	rm -rf bit
+	rm -rf *~

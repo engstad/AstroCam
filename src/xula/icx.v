@@ -5,8 +5,8 @@ module counters(input             clk,
 				input 			  reset,
 				output reg [4:0]  state,
 				output reg [11:0] start,
-				output reg [11:0] hd,
-				output reg [11:0] vd);
+				output reg [11:0] pixel_x,
+				output reg [11:0] pixel_y);
 
    //
    // -7V <->  0V: 37 ns + (110|180) ns = 137|217 ns =  7.4|11.7 cycles
@@ -39,15 +39,13 @@ module counters(input             clk,
    parameter NORMAL_COUNT = 1060 - 8;   
    
    reg [21:0] 					  cycle; // 4,194,304
-   reg [7:0] 					  frame;   
    
    initial begin
       state = 0;
       start = 0;
       cycle = 0;
-	  hd = 0;
-	  vd = 0;
-	  frame = 0;	  
+	  pixel_x = 0;
+	  pixel_y = 0;
    end
    
    always @(posedge clk or posedge reset) begin
@@ -55,25 +53,24 @@ module counters(input             clk,
 		 state <= 0;
 		 start <= 0;
 		 cycle <= 0;
-		 hd <= 0;
-		 vd <= 0;
-		 frame <= 0;		 
+		 pixel_x <= 0;
+		 pixel_y <= 0;
       end else begin		 
 		 cycle <= cycle + 1'b1;
 		 start <= start + 1'b1;
-		 hd <= hd + 1'b1;
-		 if (hd == 1132) begin
-			hd <= 1;
-			vd <= vd + 1'b1;
+		 pixel_x <= pixel_x + 1'b1;
+		 if (pixel_x == 1132) begin
+			pixel_x <= 1;
+			pixel_y <= pixel_y + 1'b1;
 		 end
 
-		 if (vd == 1060 && hd == 500) begin
+		 if (pixel_y == 1060 && pixel_x == 500) begin
 			state <= 0;
 			start <= 0;
 			cycle <= 0;
-			hd <= 0;
-			vd <= 0;
-			frame <= frame + 1'b1;
+			pixel_x <= 0;
+			pixel_y <= 0;
+			//frame <= frame + 1'b1;
 		 end else if (state == 0) begin
 			// INIT period
 			if (start == INIT_PERIOD) begin
@@ -87,7 +84,7 @@ module counters(input             clk,
 			end
 		 end else if (state < SPECIAL_COUNT + 2) begin
 			if (start == 7) begin
-			   state <= state + 1;
+			   state <= state + 1'b1;
 			   start <= 1;
 			end			   
 		 end else if (state < NORMAL_COUNT + SPECIAL_COUNT + 1) begin
@@ -193,28 +190,10 @@ module hblank(input        clk,
    assign out = hsync;
    
    always @(posedge clk) begin
-	  hsync <= hpos == 0 ? 1 : hpos == 356 ? 0 : hsync;
+	  hsync <= hpos == 0 ? 1'b1 : hpos == 356 ? 1'b0 : hsync;
    end
 endmodule // hblank
 
-/*
-module hd(input  clk,
-          input  blnk,
-          output h1,
-          output h2);
-
-   reg 			 s;
-   
-   initial s = 0;
-   
-   always @(posedge clk) begin
-	  s = ~s;
-   end	
-   
-   assign h1 = blnk ? 1'b1 : s;
-   assign h2 = ~s;
-endmodule
-*/
 
 module icx(input  clk,
 		   input  reset,
@@ -232,7 +211,7 @@ module icx(input  clk,
    wire [11:0] 	  start;
    wire [11:0] 	  x, y;   
 
-   counters ctr(.clk(clk), .reset(reset), .state(state), .start(start), .hd(x), .vd(y));
+   counters ctr(.clk(clk), .reset(reset), .state(state), .start(start), .pixel_x(x), .pixel_y(y));
 
    vt1low vt1(.state(state), .start(start), .out(xvt1));
    vt2low vt2(.state(state), .start(start), .out(xvt2));
@@ -248,29 +227,3 @@ module icx(input  clk,
 
    theta_sub tsub_mod(.hpos(x), .out(thsub));      
 endmodule
-				
-
-/*   
-module tff(output reg q, input clk, input rst);
-  
-  always @(posedge clk or posedge rst) begin
-    if (rst) begin
-      q <= 1'b0;
-    end else begin
-      q <= ~q;
-    end
-  end
-endmodule
-
-
-module rcc(q, clk, rst);
-  output [3:0] q;
-  input clk, rst;
-  
-  tff ff0(q[0], clk, rst);
-  tff ff1(q[1], q[0], rst);
-  tff ff2(q[2], q[1], rst);
-  tff ff3(q[3], q[2], rst);
-  
-endmodule
-*/
