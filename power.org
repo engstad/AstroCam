@@ -1,51 +1,73 @@
+ADA4800:
+
+Iisf = (Visf - 1.55V) / (Risf + 3 k)
+Ial = Iisf x 27
+Iidrv = (Vidrv - 0.8V) / (Ridrv + 28k)
+Icc = Iidrv x 26
+BW from tables
+
+Ial = 3.53 mA
+Icc = 1.05 mA
+BW ~~ 150 MHz
 
 
-|------------------------+--------+---------+---------+---------|
-| Unit                   |        | Voltage | Current | Power   |
-|------------------------+--------+---------+---------+---------|
-| ICX825AQA-F            |        | 12V     | 23 mA   | 0.276 W |
-|                        |        |         |         |         |
-| Current source         |        | 12V     | 6 mA    | 0.072 W |
-|                        |        |         |         |         |
-| ADA4800                |        |         |         |         |
-| - Active Load          | VISF   | 6V      | 13 mA   |         |
-| - ISF current          | RISF   | 10 kOhm | 0.12 mA |         |
-|                        |        |         |         |         |
-| ADDI9023               |        |         |         |         |
-| - Input Logic          | VDD    | 3.3V    | 0.5 mA  |         |
-| - V-driver high        | VH     | 12V     | 3.3 mA  |         |
-| - V-driver low         | VL     | -7V     | 2.1 mA  |         |
-| - V-driver mid         | VM     | 0V      | 0.3 mA  |         |
-| - SUBCK V-driver       | VLL    | -7V     | 0.3 mA  |         |
-|                        |        |         |         |         |
-| ADDI7013               |        |         |         |         |
-| - ADE&CLI              | INVDD  | 3.3V    | 1 mA    |         |
-| - AFE timing core      | AVDD   | 1.8V    | 117 mA  |         |
-| - LVDS                 | DVDD   | 1.8V    | 43 mA   |         |
-| - I/O (HD,VD,GPOx,Ser) | IOVDD  | 3.3V    | 0.1 mA  |         |
-|                        |        |         |         |         |
-| SN74LVC8T245           |        |         |         |         |
-| - Input                | VI     | 3.3V    | -24 mA  |         |
-| - Output               | VI     | 5.0V    |         |         |
-|                        |        |         |         |         |
-| Total                  |        |         |         |         |
-|                        |        | 12V     | 65 mA   |         |
-|                        |        | -7V     | 2.4 mA  |         |
-|                        |        | 3.3V    | 1.5 mA  |         |
-|                        |        | 1.8V    | 160 mA  |         |
-|                        |        |         |         |         |
-| STM32L486xx            |        | 3.3V    | 100 mA  | ?       |
-|                        |        |         |         |         |
-| FPGA                   |        |         |         |         |
-| -                      | VCCAUX | 3.3V    | 150 mA  |         |
-|                        | VCCINT | 1.2V    | 1000 mA |         |
-|                        | VCCIO1 | 3.3V    | 620 mA  |         |
-|                        | VCCIO2 | 3.3V    | 620 mA  |         |
-|                        | VCCIO3 | 3.3V    | 620 mA  |         |
-|                        | VCCIO4 | 3.3V    | 620 mA  |         |
-|                        |        |         |         |         |
-| Fan                    |        | 5.0V    |         |         |
-| Peltier(?)             |        |         |         |         |
+|------------------------+---------+---------+--------------+---------|
+| Unit                   |         | Voltage | Current      | Power   |
+|------------------------+---------+---------+--------------+---------|
+| ICX825AQA-F            |         | 12V     | 23 mA        | 0.276 W |
+|                        |         |         |              |         |
+| Current source         |         | 12V     | 6 mA         | 0.072 W |
+|                        |         |         |              |         |
+| ADA4800                |         |         |              |         |
+| - Active Load          | VISF    | 6V      | 13 mA        |         |
+| - ISF current          | RISF    | 10 kOhm | 0.12 mA      |         |
+|                        |         |         |              |         |
+| ADDI9023               |         |         |              |         |
+| - Input Logic          | VDD     | 3.3V    | 0.5 mA       |         |
+| - V-driver high        | VH      | 12V     | 3.3 mA       |         |
+| - V-driver low         | VL      | -7V     | 2.1 mA       |         |
+| - V-driver mid         | VM      | 0V      | 0.3 mA       |         |
+| - SUBCK V-driver       | VLL     | -7V     | 0.3 mA       |         |
+|                        |         |         |              |         |
+| ADDI7013               |         |         |              |         |
+| - ADE&CLI              | INVDD   | 3.3V    | 1 mA         |         |
+| - AFE timing core      | AVDD    | 1.8V    | 117 mA       |         |
+| - LVDS                 | DVDD    | 1.8V    | 43 mA        |         |
+| - I/O (HD,VD,GPOx,Ser) | IOVDD   | 3.3V    | 0.1 mA       |         |
+|                        |         |         |              |         |
+| SN74LVC8T245           |         |         |              |         |
+| - Input                | VI      | 3.3V    | -24 mA       |         |
+| - Output               | VI      | 5.0V    |              |         |
+|                        |         |         |              |         |
+| Total                  |         |         |              |         |
+|                        |         | 12V     | 65 mA        |         |
+|                        |         | -7V     | 2.4 mA       |         |
+|                        |         | 3.3V    | 1.5 mA       |         |
+|                        |         | 1.8V    | 160 mA       |         |
+|                        |         |         |              |         |
+|                        |         |         |              |         |
+| CYUSB3031              |         |         |              |         |
+| - Core                 | VDDCORE | 1.2V    | 200 mA (max) |         |
+| - Analog               | VDDA    | 1.2V    |              |         |
+| - GPIF II              | VDDIO1  | 3.3V    |              |         |
+| - S0-port              | VDDIO2  | 3.3V    |              |         |
+| - S1-port              | VDDIO3  | 3.3V    |              |         |
+| - UART/SPI/I2S         | VDDIO4  | 3.3V    |              |         |
+| - I2C/JTAG             | VDDIO5  | 3.3V    |              |         |
+| - Battery              | VBATT   | 3.7V    |              |         |
+| - USB                  | VBUS    | 5.0V    | 60 mA (max)  |         |
+| - USB 3.0 TX           | VDDQTX  | 1.2V    |              |         |
+| - USB 3.0 RX           | VDDQRX  | 1.2V    |              |         |
+| - Clock                | VCLOCK  | 3.3V    |              |         |
+|                        |         |         |              |         |
+| FPGA                   |         |         |              |         |
+| -                      | VCCAUX  | 3.3V    | 150 mA       |         |
+|                        | VCCINT  | 1.2V    | 1000 mA      |         |
+|                        | VCCIO1  | 3.3V    | 620 mA       |         |
+|                        | VCCIO2  | 3.3V    | 620 mA       |         |
+|                        | VCCIO3  | 3.3V    | 620 mA       |         |
+|                        | VCCIO4  | 3.3V    | 620 mA       |         |
+|                        |         |         |              |         |
 
 So, overall, +12V/-7V is very low, 200 mA is plenty.
 

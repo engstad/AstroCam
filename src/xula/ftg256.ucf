@@ -61,8 +61,15 @@ NET io_hl    LOC=j16 | SLEW=FAST ; // CHAN7
 NET io_rg    LOC=j14 | SLEW=FAST ; // CHAN8
 NET io_thsub LOC=f15 | SLEW=FAST ; // CHAN9  | IOSTANDARD=LVTTL | DRIVE=24 | SLEW=SLOW
 
-NET io_ping  LOC=f16 | SLEW=FAST ; // CHAN10 
 NET io_clock LOC=c16 | SLEW=FAST ; // CHAN11 (clk)
+
+NET io_spi_ssel LOC=c15; // CHAN12
+NET io_spi_mosi LOC=b16; // CHAN13
+NET io_spi_miso LOC=b15; // CHAN14
+NET io_spi_sclk LOC=f16 | SLEW=FAST; // CHAN10
+
+NET io_reset LOC=t4; // CHAN15
+NET io_enable LOC=a2; // CHAN31
 
 // 12,13,14,26,27,28,29,30,31   // 10 pins left or so
 

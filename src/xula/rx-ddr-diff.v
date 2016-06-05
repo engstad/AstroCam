@@ -1,11 +1,12 @@
 `timescale 1ps/1ps
 
 module top_nto1_ddr_diff_rx (input wire         reset,        
-			     input wire [D-1:0] datain_p,
-			     input wire [D-1:0] datain_n, 
-			     input wire 	clkin_p, 
-			     input wire 	clkin_n, 
-			     output wire [DS:0] dataout);
+							 input wire [D-1:0] datain_p,
+							 input wire [D-1:0] datain_n, 
+							 input wire 		clkin_p, 
+							 input wire 		clkin_n, 
+							 output reg [DS:0] 	dataout,
+							 output wire 		dataclk);
 
    // Parameters for serdes factor and number of IO pins
 
@@ -15,16 +16,18 @@ module top_nto1_ddr_diff_rx (input wire         reset,
 
    // Local wiring and registers
 
-   wire 		 rst ;
-   wire [DS:0] 		 rxd ;                 // Data from serdeses
-   reg [DS:0] 		 rxr ;                 // Registered Data from serdeses
-   reg 			 state ;
-   reg 			 bslip ;
-   reg [3:0] 		 count ;
+   wire 				 rst ;
+   wire [DS:0] 			 rxd ;                 // Data from serdeses
+   reg [DS:0] 			 rxr ;                 // Registered Data from serdeses
+   reg 					 state ;
+   reg 					 bslip ;
+   reg [3:0] 			 count ;
 
    assign rst = reset ;                 // active high reset pin
-   assign dataout = rxr ;
+   assign dataclk = rx_bufg_x1;   
 
+   wire 				 rxserdesstrobe;   
+   
    // Clock Input. Generate ioclocks via BUFIO2
 
    serdes_1_to_n_clk_ddr_s8_diff #(.S                      (S),            
@@ -56,12 +59,12 @@ module top_nto1_ddr_diff_rx (input wire         reset,
 
    always @ (posedge rx_bufg_x1 or posedge rst)            // example bitslip logic, if required
      begin
-	if (rst == 1'b1) begin
+		if (rst == 1'b1) begin
            state <= 0 ;
            bslip <= 1'b0 ;
            count <= 4'b0000 ;
-	end
-	else begin
+		end
+		else begin
            if (state == 0) begin
               if (rxd[DS:DS-3] != 4'h3) begin
                  bslip <= 1'b1 ;                 // bitslip needed
@@ -76,12 +79,12 @@ module top_nto1_ddr_diff_rx (input wire         reset,
                  state <= 0;
               end
            end
-	end
+		end
      end
-
+   
    always @ (posedge rx_bufg_x1)                           // process received data
      begin
-        rxr <= rxd ;
+        dataout <= rxd ;
      end
    
 endmodule

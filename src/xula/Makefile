@@ -1,10 +1,11 @@
-ISE := /home/engstad/Electronics/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin64
-XST := $(ISE)/xst
-NGB := $(ISE)/ngdbuild
-MAP := $(ISE)/map
-PAR := $(ISE)/par
-TRC := $(ISE)/trce
-BITGEN := $(ISE)/bitgen
+ISE := /home/engstad/Electronics/tools/Xilinx/14.7/ISE_DS/ISE
+ISE_BIN := $(ISE)/bin/lin64
+XST := $(ISE_BIN)/xst
+NGB := $(ISE_BIN)/ngdbuild
+MAP := $(ISE_BIN)/map
+PAR := $(ISE_BIN)/par
+TRC := $(ISE_BIN)/trce
+BITGEN := $(ISE_BIN)/bitgen
 
 SIL := -intstyle silent 
 
@@ -19,11 +20,33 @@ SPEED := 2
 CHIP := xc6slx25
 PACK := ftg256
 
+# fpgatools
+#CHIP := xc6slx9
+#PACK := tqg144
+
+# CPLD
+#CHIP := xc9536xl
+#SPEED := 1
+#PACK := pc44
+
+
 PART := $(CHIP)-$(SPEED)-$(PACK)
 
 all: bit/$(PRJ).bit
 
-xst/$(PRJ).ngc: main.v icx.v rx-ddr-diff.v clk-ddr-s8-diff.v data-s8-diff.v $(PRJ).xst
+edf: main.ngo
+
+V_SRCS := main.v icx.v rx-ddr-diff.v clk-ddr-s8-diff.v data-s8-diff.v $(ISE)/verilog/src/glbl.v 
+
+INC := -y $(ISE)/verilog/src/unisims -y $(ISE)/verilog/src/simprims
+
+main.edf: $(V_SRCS) Makefile
+	iverilog -v $(INC) -parch=generic-xnf -ppart=$(PART) -tfpga -o main.edf $(V_SRCS)
+
+main.ngo: main.edf
+	$(ISE_BIN)/edif2ngd main.edf main.ngo
+
+xst/$(PRJ).ngc: $(V_SRCS) SdramCntl.vhd $(PRJ).xst
 	mkdir -p xst/tmp
 	mkdir -p xst/reports
 	cd xst && $(XST) $(SIL) -ifn ../$(PRJ).xst -ofn reports/ast.syr && cd ..

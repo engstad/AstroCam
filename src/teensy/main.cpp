@@ -57,7 +57,7 @@ private:
 	uint8_t  clk;   // Clock pin
 	uint8_t  pcs;   // Peripheral chip select bits
 	uint32_t ctar;
-	
+
 public:
 	ADDI(uint8_t cs_ = 10, uint8_t dta_ = 11, uint8_t clk_ = 13)
 		: cs(cs_)
@@ -104,15 +104,15 @@ public:
 			} else {
 				ctar = CTAR_4MHz;
 			}
-			
+
 			ctar |= SPI_CTAR_LSBFE; // Least bit first
-			ctar |= SPI_CTAR_CPOL;  // Clock inactive state is high 
-			ctar |= SPI_CTAR_CPHA;  // 
+			ctar |= SPI_CTAR_CPOL;  // Clock inactive state is high
+			ctar |= SPI_CTAR_CPHA;  //
 			ctar |= SPI_CTAR_FMSZ(15);
-				
+
 			pcs = spi_configure_cs_pin(cs);
 			SIM_SCGC6 |= SIM_SCGC6_SPI0;  // System clock gating control register, setting up SPI0 gate
-			
+
 			KINETISK_SPI0.MCR = SPI_MCR_MDIS | SPI_MCR_HALT; // Bit 14: MDIS, Bit 0: HALT, disables and halts device (if already running)
 			KINETISK_SPI0.CTAR0 = ctar;  // 16-bit frame size
 			KINETISK_SPI0.MCR = SPI_MCR_MSTR | /*SPI_MCR_CONT_SCKE |*/ SPI_MCR_PCSIS(0x1F) | SPI_MCR_CLR_TXF | SPI_MCR_DIS_RXF;
@@ -165,9 +165,9 @@ public:
 				write_16(cur[1], 0);
 
 				if (delay >= 0)
-					delayMicroseconds(delay);				
+					delayMicroseconds(delay);
 			}
-		}		
+		}
 	}
 };
 
@@ -180,18 +180,18 @@ int main()
 	pinMode(LED, OUTPUT);
 
 	pinMode(FPGA0, OUTPUT);
-	
+
 	digitalWrite(FPGA0, HIGH);
-	
+
 	analogWriteFrequency(CLI, 24 * 1000 * 1000); // 24 MHz max
 	analogWriteResolution(4);
 	analogWrite(CLI, 8);
 
-	digitalWrite(SYNC, LOW);	
+	digitalWrite(SYNC, LOW);
 	delayMicroseconds(500);
 
 	pinMode(SYNC, INPUT);
-	
+
 	// Make sure SYNC is high
 	uint32_t count = 0;
 	while (true)
@@ -216,7 +216,7 @@ int main()
 		else if ((count & 31) == 16)
 			digitalWrite(LED, LOW);
 
-		yield();		
+		yield();
 	}
 
 	yield();
@@ -224,8 +224,8 @@ int main()
 	ADDI addi(10, 11, 13);
 
 	if (!addi.init(16))
-		return 0;	
-	
+		return 0;
+
 #if 1
 	for (int j = 0; j < 8; ++j)
 	{
@@ -240,7 +240,7 @@ int main()
 #if 1
 	uint8_t cmdDelay = 0;
 	uint8_t addDelay = 0;
-	
+
 	addi.write_buffer(afestartup, ARRAY_SIZE_OF(afestartup), cmdDelay);
 	delayMicroseconds(addDelay);
 	addi.write_buffer(code, ARRAY_SIZE_OF(code), cmdDelay);
@@ -257,8 +257,7 @@ int main()
 		digitalWrite(LED, LOW);
 		delay(100);
 		yield();
-	}   	
-	
+	}
 #else
 	static uint16_t test[] = {
 		0x4321, 0x8765,
@@ -272,11 +271,11 @@ int main()
 		0xC007, 0x8888,
 #endif
 	};
-	
-	while (1)		
+
+	while (1)
 	{
 		addi.write_buffer(test, 4 /*ARRAY_SIZE_OF(test)*/, 5);
-		delayMicroseconds(10000);				
+		delayMicroseconds(10000);
 	}
 #endif
 }
