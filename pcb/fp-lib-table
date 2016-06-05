@@ -51,6 +51,7 @@
   (lib (name w_to)(type KiCad)(uri ${KIWALTERMOD}/w_to.pretty)(options "")(descr Walters))
   (lib (name w_vacuum)(type KiCad)(uri ${KIWALTERMOD}/w_vacuum.pretty)(options "")(descr Walters))
   (lib (name engstad)(type KiCad)(uri ${KIENGSTADMOD}/lib/engstad/engstad.pretty)(options "")(descr ""))
-  (lib (name sony)(type KiCad)(uri ${KIENGSTADMOD}/lib/restricted/sony.pretty)(options "")(descr ""))
   (lib (name xess)(type KiCad)(uri ${KIENGSTADMOD}/AstroCam/lib/xess.pretty)(options "")(descr ""))
+  (lib (name sony)(type KiCad)(uri /home/engstad/Electronics/proj/lib/restricted/sony.pretty)(options "")(descr ""))
+  (lib (name Texas-Instruments)(type KiCad)(uri /home/engstad/Electronics/proj/AstroCam/lib/savenlid/footprints/Texas-Instruments)(options "")(descr ""))
 )

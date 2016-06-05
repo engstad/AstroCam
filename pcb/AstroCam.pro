@@ -1,4 +1,4 @@
-update=8/25/2015 1:42:35 PM
+update=Thu 07 Jan 2016 12:35:16 AM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -62,3 +62,14 @@ LibName29=contrib
 LibName30=valves
 LibName31=engstad/engstad/engstad
 LibName32=restricted/sony/sony
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=50
+ERC_TestSimilarLabels=1

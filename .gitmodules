@@ -1,3 +1,6 @@
 [submodule "lib/xess.pretty"]
 	path = lib/xess.pretty
 	url = https://github.com/xesscorp/xess.pretty.git
+[submodule "lib/savenlid"]
+	path = lib/savenlid
+	url = https://github.com/savenlid/kicad.git

@@ -47,27 +47,27 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1650 1550 1000 1350
-U 557696AD
-F0 "power-supply" 60
-F1 "power.sch" 60
-$EndSheet
-$Sheet
-S 4450 1550 850  900 
+S 5750 2650 850  900 
 U 557AD230
 F0 "h-driver" 60
 F1 "h-driver.sch" 60
 $EndSheet
 $Sheet
-S 3050 1550 1100 1200
-U 557AFA5B
-F0 "camera" 60
-F1 "camera.sch" 60
+S 4400 2700 1000 900 
+U 568B9711
+F0 "fpga" 60
+F1 "fpga.sch" 60
 $EndSheet
 $Sheet
-S 5650 1550 1300 1400
-U 55E85005
-F0 "u-ctrl" 60
-F1 "u-ctrl.sch" 60
+S 3050 2650 950  950 
+U 56ACC940
+F0 "usb-ctrl" 50
+F1 "usb-ctrl.sch" 50
+$EndSheet
+$Sheet
+S 6850 2650 1000 950 
+U 56F8F5B8
+F0 "power" 50
+F1 "power.sch" 50
 $EndSheet
 $EndSCHEMATC

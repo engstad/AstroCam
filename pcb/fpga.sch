@@ -1,0 +1,1154 @@
+EESchema Schematic File Version 2
+LIBS:AstroCam-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:engstad
+LIBS:sony
+LIBS:AstroCam-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	950  1850 1750 1850
+Text GLabel 1350 1250 0    50   Input ~ 0
+FPGA-TCK
+Text GLabel 1350 1350 0    50   Input ~ 0
+FPGA-TDI
+Text GLabel 1350 1450 0    50   Input ~ 0
+FPGA-TMS
+Text GLabel 1350 1550 0    50   Input ~ 0
+FPGA-TDO
+Wire Wire Line
+	1350 1250 1750 1250
+Wire Wire Line
+	1350 1350 1750 1350
+Wire Wire Line
+	1350 1450 1750 1450
+Wire Wire Line
+	1350 1550 1750 1550
+$Comp
+L GND #PWR019
+U 1 1 568BAC6E
+P 1650 1650
+F 0 "#PWR019" H 1650 1400 50  0001 C CNN
+F 1 "GND" V 1658 1522 50  0000 R CNN
+F 2 "" H 1650 1650 50  0000 C CNN
+F 3 "" H 1650 1650 50  0000 C CNN
+	1    1650 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1650 1750 1650
+$Comp
+L GND #PWR020
+U 1 1 568BACA6
+P 1650 1750
+F 0 "#PWR020" H 1650 1500 50  0001 C CNN
+F 1 "GND" V 1658 1622 50  0000 R CNN
+F 2 "" H 1650 1750 50  0000 C CNN
+F 3 "" H 1650 1750 50  0000 C CNN
+	1    1650 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1750 1750 1750
+Wire Wire Line
+	950  1950 1750 1950
+Text GLabel 5050 9650 0    50   Input ~ 0
+FPGA-PROG-B
+Wire Wire Line
+	5050 9650 5400 9650
+Text GLabel 5200 5750 0    50   Input ~ 0
+FPGA-DONE
+Wire Wire Line
+	5200 5750 5400 5750
+Text GLabel 5050 9450 0    50   Input ~ 0
+FPGA-INIT-B
+Wire Wire Line
+	5050 9450 5400 9450
+$Comp
+L GND #PWR021
+U 1 1 568BB232
+P 5250 6150
+F 0 "#PWR021" H 5250 5900 50  0001 C CNN
+F 1 "GND" V 5258 6022 50  0000 R CNN
+F 2 "" H 5250 6150 50  0000 C CNN
+F 3 "" H 5250 6150 50  0000 C CNN
+	1    5250 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 6150 5400 6150
+$Comp
+L GND #PWR022
+U 1 1 568BB333
+P 4900 1050
+F 0 "#PWR022" H 4900 800 50  0001 C CNN
+F 1 "GND" V 4908 922 50  0000 R CNN
+F 2 "" H 4900 1050 50  0000 C CNN
+F 3 "" H 4900 1050 50  0000 C CNN
+	1    4900 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1050 5450 1050
+Text GLabel 4350 7750 0    50   Input ~ 0
+FPGA-CLKIN
+Text GLabel 4350 7650 0    50   Input ~ 0
+FPGA-CLKOUT
+Text GLabel 5400 6250 0    50   Input ~ 0
+FPGA-A0+
+Text GLabel 5400 6350 0    50   Input ~ 0
+FPGA-A0-
+Text GLabel 5400 7250 0    50   Input ~ 0
+FPGA-A1+
+Text GLabel 5400 7350 0    50   Input ~ 0
+FPGA-A1-
+Text GLabel 5400 8650 0    50   Input ~ 0
+FPGA-B0+
+Text GLabel 5400 8750 0    50   Input ~ 0
+FPGA-B0-
+Text GLabel 5400 9050 0    50   Input ~ 0
+FPGA-B1+
+Text GLabel 5400 9150 0    50   Input ~ 0
+FPGA-B1-
+Text GLabel 5400 8050 0    50   Input ~ 0
+FPGA-CLK+
+Text GLabel 5400 8150 0    50   Input ~ 0
+FPGA-CLK-
+Text Label 5450 4750 2    50   ~ 0
+DQ0
+Text Label 5450 4650 2    50   ~ 0
+DQ1
+Text Label 5450 4950 2    50   ~ 0
+DQ2
+Text Label 5450 4350 2    50   ~ 0
+DQ3
+Text Label 5450 4150 2    50   ~ 0
+DQ4
+Text Label 5450 3350 2    50   ~ 0
+DQ5
+Text Label 5450 3250 2    50   ~ 0
+DQ6
+Text Label 5450 3150 2    50   ~ 0
+DQ7
+Text Label 5450 2950 2    50   ~ 0
+DQ8
+Text Label 5450 2850 2    50   ~ 0
+DQ9
+Text Label 5450 2550 2    50   ~ 0
+DQ10
+Text Label 5450 2050 2    50   ~ 0
+DQ11
+Text Label 5450 2150 2    50   ~ 0
+DQ12
+Text Label 5450 1750 2    50   ~ 0
+DQ13
+Text Label 5450 1350 2    50   ~ 0
+DQ14
+Text Label 5450 1150 2    50   ~ 0
+DQ15
+Text GLabel 4150 1350 0    50   Input ~ 0
+DQ[0..15]
+Wire Wire Line
+	4350 7650 5400 7650
+NoConn ~ 9050 6400
+NoConn ~ 9050 6500
+NoConn ~ 9050 6600
+NoConn ~ 9050 7200
+NoConn ~ 9050 7300
+NoConn ~ 9050 7400
+NoConn ~ 9050 7500
+NoConn ~ 9050 7600
+NoConn ~ 9050 7700
+NoConn ~ 9050 7800
+NoConn ~ 9050 7900
+NoConn ~ 9050 8000
+NoConn ~ 9050 8100
+NoConn ~ 9050 8200
+NoConn ~ 9050 8300
+NoConn ~ 9050 8400
+NoConn ~ 9050 8500
+NoConn ~ 9050 8600
+NoConn ~ 9050 8700
+NoConn ~ 9050 8800
+NoConn ~ 9050 8900
+NoConn ~ 9050 9000
+NoConn ~ 9050 9100
+NoConn ~ 9050 9200
+NoConn ~ 9050 9300
+NoConn ~ 9050 9400
+NoConn ~ 9050 9500
+NoConn ~ 9050 9600
+$Comp
+L CONN_02X02 P4
+U 1 1 568F5DEB
+P 1550 2700
+F 0 "P4" H 1550 2966 50  0000 C CNN
+F 1 "CONN_02X02" H 1550 2874 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_2x2" H 1550 1500 50  0001 C CNN
+F 3 "" H 1550 1500 50  0000 C CNN
+	1    1550 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 2650 0    50   Input ~ 0
+FPGA-TDI
+Wire Wire Line
+	1150 2650 1300 2650
+Text GLabel 2000 2650 2    50   Input ~ 0
+FPGA-TCK
+Wire Wire Line
+	1800 2650 2000 2650
+Text GLabel 1150 2750 0    50   Input ~ 0
+FPGA-TMS
+Wire Wire Line
+	1150 2750 1300 2750
+Text GLabel 2000 2750 2    50   Input ~ 0
+FPGA-TDO
+Wire Wire Line
+	2000 2750 1800 2750
+$Comp
+L XILINX-6SLX16-CSG225 U2
+U 5 1 568F875E
+P 1750 1250
+F 0 "U2" H 2581 953 60  0000 L CNN
+F 1 "XILINX-6SLX16-CSG225" H 2581 847 60  0000 L CNN
+F 2 "engstad:csg225" H 1750 1250 50  0001 C CNN
+F 3 "" H 1750 1250 50  0000 C CNN
+	5    1750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L XILINX-6SLX16-CSG225 U2
+U 4 1 568F8925
+P 9050 5600
+F 0 "U2" H 10881 3553 60  0000 L CNN
+F 1 "XILINX-6SLX16-CSG225" H 10881 3447 60  0000 L CNN
+F 2 "engstad:csg225" H 9050 5600 50  0001 C CNN
+F 3 "" H 9050 5600 50  0000 C CNN
+	4    9050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 6800 8800 6800
+Wire Wire Line
+	8800 6900 9050 6900
+$Comp
+L XILINX-6SLX16-CSG225 U2
+U 2 1 568F8E38
+P 9050 1150
+F 0 "U2" H 10781 -797 60  0000 L CNN
+F 1 "XILINX-6SLX16-CSG225" H 10781 -903 60  0000 L CNN
+F 2 "engstad:csg225" H 9050 1150 50  0001 C CNN
+F 3 "" H 9050 1150 50  0000 C CNN
+	2    9050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L XILINX-6SLX16-CSG225 U2
+U 1 1 568F98EB
+P 5450 1050
+F 0 "U2" H 6581 -897 60  0000 L CNN
+F 1 "XILINX-6SLX16-CSG225" H 6581 -1003 60  0000 L CNN
+F 2 "engstad:csg225" H 5450 1050 50  0001 C CNN
+F 3 "" H 5450 1050 50  0000 C CNN
+	1    5450 1050
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	4150 1350 4250 1350
+Wire Bus Line
+	4250 1350 4250 2850
+Entry Wire Line
+	4250 1350 4350 1450
+Entry Wire Line
+	4250 1450 4350 1550
+Entry Wire Line
+	4250 1550 4350 1650
+Entry Wire Line
+	4250 1650 4350 1750
+Entry Wire Line
+	4250 1750 4350 1850
+Entry Wire Line
+	4250 1850 4350 1950
+Entry Wire Line
+	4250 1950 4350 2050
+Entry Wire Line
+	4250 2050 4350 2150
+Entry Wire Line
+	4250 2150 4350 2250
+Entry Wire Line
+	4250 2250 4350 2350
+Entry Wire Line
+	4250 2350 4350 2450
+Entry Wire Line
+	4250 2450 4350 2550
+Entry Wire Line
+	4250 2550 4350 2650
+Entry Wire Line
+	4250 2650 4350 2750
+Entry Wire Line
+	4250 2750 4350 2850
+Entry Wire Line
+	4250 2850 4350 2950
+Text Label 4450 1450 0    50   ~ 0
+DQ0
+Text Label 4450 1550 0    50   ~ 0
+DQ1
+Text Label 4450 1650 0    50   ~ 0
+DQ2
+Wire Wire Line
+	4350 1450 4450 1450
+Wire Wire Line
+	4350 1550 4450 1550
+Wire Wire Line
+	4350 1650 4450 1650
+Wire Wire Line
+	4350 1750 4450 1750
+Wire Wire Line
+	4350 1850 4450 1850
+Wire Wire Line
+	4350 1950 4450 1950
+Wire Wire Line
+	4350 2050 4450 2050
+Wire Wire Line
+	4350 2150 4450 2150
+Wire Wire Line
+	4350 2250 4450 2250
+Wire Wire Line
+	4350 2350 4450 2350
+Wire Wire Line
+	4350 2450 4450 2450
+Wire Wire Line
+	4350 2550 4450 2550
+Wire Wire Line
+	4350 2650 4450 2650
+Wire Wire Line
+	4350 2750 4450 2750
+Wire Wire Line
+	4350 2850 4450 2850
+Wire Wire Line
+	4350 2950 4450 2950
+$Comp
+L XILINX-6SLX16-CSG225 U2
+U 3 1 568FA99E
+P 5400 5650
+F 0 "U2" H 7031 3653 60  0000 L CNN
+F 1 "XILINX-6SLX16-CSG225" H 7031 3547 60  0000 L CNN
+F 2 "engstad:csg225" H 5400 5650 50  0001 C CNN
+F 3 "" H 5400 5650 50  0000 C CNN
+	3    5400 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 5650 0    50   Input ~ 0
+FPGA-COMP
+Wire Wire Line
+	5200 5650 5400 5650
+Wire Wire Line
+	4350 7750 5400 7750
+NoConn ~ 9050 9700
+Text Label 4450 1750 0    50   ~ 0
+DQ3
+Text Label 4450 1850 0    50   ~ 0
+DQ4
+Text Label 4450 1950 0    50   ~ 0
+DQ5
+Text Label 4450 2050 0    50   ~ 0
+DQ6
+Text Label 4450 2150 0    50   ~ 0
+DQ7
+Text Label 4450 2250 0    50   ~ 0
+DQ8
+Text Label 4450 2350 0    50   ~ 0
+DQ9
+Text Label 4450 2450 0    50   ~ 0
+DQ10
+Text Label 4450 2550 0    50   ~ 0
+DQ11
+Text Label 4450 2650 0    50   ~ 0
+DQ12
+Text Label 4450 2750 0    50   ~ 0
+DQ13
+Text Label 4450 2850 0    50   ~ 0
+DQ14
+Text Label 4450 2950 0    50   ~ 0
+DQ15
+NoConn ~ 5450 4450
+NoConn ~ 5450 4550
+NoConn ~ 5450 4850
+NoConn ~ 5450 4250
+NoConn ~ 5450 4050
+NoConn ~ 5450 3950
+NoConn ~ 5450 3850
+NoConn ~ 5450 3450
+NoConn ~ 5450 1250
+NoConn ~ 5450 1450
+NoConn ~ 5450 1550
+NoConn ~ 5450 1650
+NoConn ~ 5450 1850
+NoConn ~ 5450 1950
+NoConn ~ 5450 2250
+NoConn ~ 5450 2350
+NoConn ~ 5450 2450
+NoConn ~ 5450 2650
+NoConn ~ 5450 2750
+NoConn ~ 9050 1150
+NoConn ~ 9050 1250
+NoConn ~ 9050 1350
+NoConn ~ 9050 1450
+NoConn ~ 9050 1550
+NoConn ~ 9050 1650
+NoConn ~ 9050 1750
+NoConn ~ 9050 1850
+NoConn ~ 9050 1950
+NoConn ~ 9050 2050
+NoConn ~ 9050 2150
+NoConn ~ 9050 2250
+NoConn ~ 9050 2350
+NoConn ~ 9050 2450
+NoConn ~ 9050 2550
+NoConn ~ 9050 2650
+NoConn ~ 9050 2750
+NoConn ~ 9050 2850
+NoConn ~ 9050 2950
+NoConn ~ 9050 3050
+NoConn ~ 9050 3150
+NoConn ~ 9050 3250
+NoConn ~ 9050 3350
+NoConn ~ 9050 3450
+NoConn ~ 9050 3550
+NoConn ~ 9050 3650
+NoConn ~ 9050 3750
+NoConn ~ 9050 3850
+NoConn ~ 9050 3950
+NoConn ~ 9050 4050
+NoConn ~ 9050 4150
+NoConn ~ 9050 4250
+NoConn ~ 9050 4350
+NoConn ~ 9050 4450
+NoConn ~ 9050 4550
+NoConn ~ 9050 4650
+NoConn ~ 9050 4750
+NoConn ~ 9050 4850
+NoConn ~ 9050 4950
+NoConn ~ 9050 5050
+$Comp
+L CONN_01X08 P5
+U 1 1 56D6DC3A
+P 14800 1500
+F 0 "P5" H 14877 1538 50  0000 L CNN
+F 1 "VDRV" H 14877 1446 50  0000 L CNN
+F 2 "w_pin_strip:pin_strip_8" H 14800 1500 50  0001 C CNN
+F 3 "" H 14800 1500 50  0000 C CNN
+	1    14800 1500
+	1    0    0    -1  
+$EndComp
+Text Label 14600 1150 2    50   ~ 0
+XV1
+Text Label 14600 1250 2    50   ~ 0
+XV2
+Text Label 14600 1350 2    50   ~ 0
+XV3
+Text Label 14600 1450 2    50   ~ 0
+XV4
+Text Label 14600 1550 2    50   ~ 0
+XSHT
+Text Label 14600 1650 2    50   ~ 0
+XSG1
+Text Label 14600 1750 2    50   ~ 0
+XSG2
+Text Label 14600 1850 2    50   ~ 0
+VEN
+$Comp
+L CONN_01X06 P6
+U 1 1 56D6DE5B
+P 14800 2300
+F 0 "P6" H 14878 2338 50  0000 L CNN
+F 1 "HDRV" H 14878 2246 50  0000 L CNN
+F 2 "w_pin_strip:pin_strip_6" H 14800 2300 50  0001 C CNN
+F 3 "" H 14800 2300 50  0000 C CNN
+	1    14800 2300
+	1    0    0    -1  
+$EndComp
+Text Label 14600 2050 2    50   ~ 0
+H1
+Text Label 14600 2150 2    50   ~ 0
+H2
+Text Label 14600 2250 2    50   ~ 0
+HL
+Text Label 14600 2350 2    50   ~ 0
+RG
+NoConn ~ 14600 2450
+Text Label 14600 2550 2    50   ~ 0
+HEN#
+Text Label 8800 6800 2    50   ~ 0
+H1
+Text Label 8800 6900 2    50   ~ 0
+H2
+Text Label 8800 7000 2    50   ~ 0
+HL
+Text Label 8800 7100 2    50   ~ 0
+RG
+Wire Wire Line
+	8800 7100 9050 7100
+Wire Wire Line
+	8800 7000 9050 7000
+Text Label 9050 5600 2    50   ~ 0
+XV1
+Text Label 9050 5700 2    50   ~ 0
+XV2
+Text Label 9050 5800 2    50   ~ 0
+XV3
+Text Label 9050 5900 2    50   ~ 0
+XV4
+Text Label 9050 6000 2    50   ~ 0
+XSHT
+Text Label 9050 6100 2    50   ~ 0
+XSG1
+Text Label 9050 6200 2    50   ~ 0
+XSG2
+Text Label 9050 6300 2    50   ~ 0
+VEN
+Text Label 9050 6700 2    50   ~ 0
+HEN#
+Text GLabel 5000 3050 0    50   Output ~ 0
+PCLK
+Text GLabel 4950 3550 0    50   Input ~ 0
+CRST#
+Text GLabel 4950 3650 0    50   Output ~ 0
+FV
+Text GLabel 4950 3750 0    50   Output ~ 0
+LV
+Wire Wire Line
+	4950 3550 5450 3550
+Wire Wire Line
+	4950 3650 5450 3650
+Wire Wire Line
+	4950 3750 5450 3750
+Wire Wire Line
+	5000 3050 5450 3050
+NoConn ~ 5400 5850
+NoConn ~ 5400 5950
+NoConn ~ 5400 6050
+NoConn ~ 5400 6450
+NoConn ~ 5400 6550
+NoConn ~ 5400 6650
+NoConn ~ 5400 6750
+NoConn ~ 5400 6850
+NoConn ~ 5400 6950
+NoConn ~ 5400 7050
+NoConn ~ 5400 7150
+NoConn ~ 5400 7450
+NoConn ~ 5400 7550
+NoConn ~ 5400 7850
+NoConn ~ 5400 7950
+NoConn ~ 5400 9250
+NoConn ~ 5400 9350
+NoConn ~ 5400 9550
+NoConn ~ 5400 8250
+NoConn ~ 5400 8350
+NoConn ~ 5400 8450
+NoConn ~ 5400 8550
+NoConn ~ 5400 8850
+NoConn ~ 5400 8950
+Text Notes 550  3700 0    50   ~ 0
+LX16-CSG225:\nVccint: 5x4.7+0.47\nVccaux: 100+4.7+2x0.47\nVcc0 (bank 0): 100+4.7+0.47\nVcc1 (bank 0): 100+4.7+0.47\nVcc2 (bank 0): 100+4.7+0.47\nVcc3 (bank 0): 100+4.7+0.47\n\n100 uF: C > 100uF, 1210 X7R or X5R (max 5 nH, 10 mO<ESR<60mO), 6.3V [GRM32ER60J107ME20L]\n4.7 uF: C > 4.7uF, 0805 X7R or X5R (max 2 nH, 10 mO<ESR<60mO).\n0.47 uF: C > 0.47uF, 0402 X7R or X5R (max 1.5 nH, 10 mO<ESR<60mO), 6.3V\n
+Text Label 950  1850 0    50   ~ 0
+VCCAUX
+Text Label 950  1950 0    50   ~ 0
+VCCINT
+Wire Wire Line
+	550  4150 3350 4150
+$Comp
+L C_Small C13
+U 1 1 56F00918
+P 1350 4300
+F 0 "C13" H 1442 4346 50  0000 L CNN
+F 1 "4.7uF" H 1442 4254 50  0000 L CNN
+F 2 "engstad:0805" H 1442 4208 50  0001 L CNN
+F 3 "" H 1350 4300 50  0000 C CNN
+	1    1350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4200 1350 4150
+Connection ~ 1350 4150
+Wire Wire Line
+	1350 4400 1350 4450
+Wire Wire Line
+	1250 4450 3350 4450
+Wire Wire Line
+	1750 4450 1750 4400
+Connection ~ 1350 4450
+Wire Wire Line
+	1750 4200 1750 4150
+Connection ~ 1750 4150
+Wire Wire Line
+	2150 4450 2150 4400
+Connection ~ 1750 4450
+Wire Wire Line
+	2150 4200 2150 4150
+Connection ~ 2150 4150
+$Comp
+L C_Small C34
+U 1 1 56F00DFE
+P 3350 4300
+F 0 "C34" H 3442 4346 50  0000 L CNN
+F 1 ".47uF" H 3442 4254 50  0000 L CNN
+F 2 "engstad:0402" H 3350 4300 50  0001 C CNN
+F 3 "" H 3350 4300 50  0000 C CNN
+	1    3350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C19
+U 1 1 56F00F96
+P 1750 4300
+F 0 "C19" H 1842 4346 50  0000 L CNN
+F 1 "4.7uF" H 1842 4254 50  0000 L CNN
+F 2 "engstad:0805" H 1842 4208 50  0001 L CNN
+F 3 "" H 1750 4300 50  0000 C CNN
+	1    1750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C25
+U 1 1 56F00FD3
+P 2150 4300
+F 0 "C25" H 2242 4346 50  0000 L CNN
+F 1 "4.7uF" H 2242 4254 50  0000 L CNN
+F 2 "engstad:0805" H 2242 4208 50  0001 L CNN
+F 3 "" H 2150 4300 50  0000 C CNN
+	1    2150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C31
+U 1 1 56F01013
+P 2550 4300
+F 0 "C31" H 2642 4346 50  0000 L CNN
+F 1 "4.7uF" H 2642 4254 50  0000 L CNN
+F 2 "engstad:0805" H 2642 4208 50  0001 L CNN
+F 3 "" H 2550 4300 50  0000 C CNN
+	1    2550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C33
+U 1 1 56F01056
+P 2950 4300
+F 0 "C33" H 3042 4346 50  0000 L CNN
+F 1 "4.7uF" H 3042 4254 50  0000 L CNN
+F 2 "engstad:0805" H 3042 4208 50  0001 L CNN
+F 3 "" H 2950 4300 50  0000 C CNN
+	1    2950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4450 2550 4400
+Connection ~ 2150 4450
+Wire Wire Line
+	2950 4450 2950 4400
+Connection ~ 2550 4450
+Wire Wire Line
+	2550 4150 2550 4200
+Connection ~ 2550 4150
+Wire Wire Line
+	2950 4150 2950 4200
+Wire Wire Line
+	3350 4150 3350 4200
+Connection ~ 2950 4150
+Wire Wire Line
+	3350 4450 3350 4400
+Connection ~ 2950 4450
+Wire Wire Line
+	550  4750 2550 4750
+$Comp
+L C_Small C20
+U 1 1 56F014DE
+P 1750 4900
+F 0 "C20" H 1842 4946 50  0000 L CNN
+F 1 "4.7uF" H 1842 4854 50  0000 L CNN
+F 2 "engstad:0805" H 1842 4808 50  0001 L CNN
+F 3 "" H 1750 4900 50  0000 C CNN
+	1    1750 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4800 1350 4750
+Connection ~ 1350 4750
+Wire Wire Line
+	1350 5000 1350 5050
+Wire Wire Line
+	1250 5050 2550 5050
+Wire Wire Line
+	1750 5050 1750 5000
+Connection ~ 1350 5050
+Wire Wire Line
+	1750 4800 1750 4750
+Connection ~ 1750 4750
+Connection ~ 1750 5050
+Connection ~ 2150 4750
+$Comp
+L C_Small C32
+U 1 1 56F014F0
+P 2550 4900
+F 0 "C32" H 2642 4946 50  0000 L CNN
+F 1 ".47uF" H 2642 4854 50  0000 L CNN
+F 2 "engstad:0402" H 2550 4900 50  0001 C CNN
+F 3 "" H 2550 4900 50  0000 C CNN
+	1    2550 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 5050
+Text Label 550  4750 0    50   ~ 0
+VCCAUX
+Text Label 550  4150 0    50   ~ 0
+VCCINT
+$Comp
+L C_Small C26
+U 1 1 56F015F7
+P 2150 4900
+F 0 "C26" H 2242 4946 50  0000 L CNN
+F 1 ".47uF" H 2242 4854 50  0000 L CNN
+F 2 "engstad:0402" H 2150 4900 50  0001 C CNN
+F 3 "" H 2150 4900 50  0000 C CNN
+	1    2150 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C14
+U 1 1 56F0178C
+P 1350 4900
+F 0 "C14" H 1442 4946 50  0000 L CNN
+F 1 "100uF" H 1442 4854 50  0000 L CNN
+F 2 "" H 1350 4900 50  0000 C CNN
+F 3 "" H 1350 4900 50  0000 C CNN
+	1    1350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5050 2550 5000
+Wire Wire Line
+	2550 4750 2550 4800
+Wire Wire Line
+	2150 4800 2150 4750
+Wire Wire Line
+	2150 5050 2150 5000
+Wire Wire Line
+	550  5400 2150 5400
+$Comp
+L C_Small C21
+U 1 1 56F01E9A
+P 1750 5550
+F 0 "C21" H 1842 5596 50  0000 L CNN
+F 1 "4.7uF" H 1842 5504 50  0000 L CNN
+F 2 "engstad:0805" H 1842 5458 50  0001 L CNN
+F 3 "" H 1750 5550 50  0000 C CNN
+	1    1750 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5450 1350 5400
+Connection ~ 1350 5400
+Wire Wire Line
+	1350 5650 1350 5700
+Wire Wire Line
+	1250 5700 2150 5700
+Wire Wire Line
+	1750 5700 1750 5650
+Connection ~ 1350 5700
+Wire Wire Line
+	1750 5450 1750 5400
+Connection ~ 1750 5400
+Connection ~ 1750 5700
+$Comp
+L C_Small C27
+U 1 1 56F01EAD
+P 2150 5550
+F 0 "C27" H 2242 5596 50  0000 L CNN
+F 1 ".47uF" H 2242 5504 50  0000 L CNN
+F 2 "engstad:0402" H 2150 5550 50  0001 C CNN
+F 3 "" H 2150 5550 50  0000 C CNN
+	1    2150 5550
+	1    0    0    -1  
+$EndComp
+Text Label 550  5400 0    50   ~ 0
+VCC0
+$Comp
+L C_Small C15
+U 1 1 56F01EBB
+P 1350 5550
+F 0 "C15" H 1442 5596 50  0000 L CNN
+F 1 "100uF" H 1442 5504 50  0000 L CNN
+F 2 "" H 1350 5550 50  0000 C CNN
+F 3 "" H 1350 5550 50  0000 C CNN
+	1    1350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5400 2150 5450
+Wire Wire Line
+	2150 5700 2150 5650
+Wire Wire Line
+	550  6000 2150 6000
+$Comp
+L C_Small C22
+U 1 1 56F021D9
+P 1750 6150
+F 0 "C22" H 1842 6196 50  0000 L CNN
+F 1 "4.7uF" H 1842 6104 50  0000 L CNN
+F 2 "engstad:0805" H 1842 6058 50  0001 L CNN
+F 3 "" H 1750 6150 50  0000 C CNN
+	1    1750 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6050 1350 6000
+Connection ~ 1350 6000
+Wire Wire Line
+	1350 6250 1350 6300
+Wire Wire Line
+	1250 6300 2150 6300
+Wire Wire Line
+	1750 6300 1750 6250
+Connection ~ 1350 6300
+Wire Wire Line
+	1750 6050 1750 6000
+Connection ~ 1750 6000
+Connection ~ 1750 6300
+$Comp
+L C_Small C28
+U 1 1 56F021EA
+P 2150 6150
+F 0 "C28" H 2242 6196 50  0000 L CNN
+F 1 ".47uF" H 2242 6104 50  0000 L CNN
+F 2 "engstad:0402" H 2150 6150 50  0001 C CNN
+F 3 "" H 2150 6150 50  0000 C CNN
+	1    2150 6150
+	1    0    0    -1  
+$EndComp
+Text Label 550  6000 0    50   ~ 0
+VCC1
+$Comp
+L C_Small C16
+U 1 1 56F021F1
+P 1350 6150
+F 0 "C16" H 1442 6196 50  0000 L CNN
+F 1 "100uF" H 1442 6104 50  0000 L CNN
+F 2 "" H 1350 6150 50  0000 C CNN
+F 3 "" H 1350 6150 50  0000 C CNN
+	1    1350 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6000 2150 6050
+Wire Wire Line
+	2150 6300 2150 6250
+Wire Wire Line
+	550  6600 2150 6600
+$Comp
+L C_Small C23
+U 1 1 56F0226E
+P 1750 6750
+F 0 "C23" H 1842 6796 50  0000 L CNN
+F 1 "4.7uF" H 1842 6704 50  0000 L CNN
+F 2 "engstad:0805" H 1842 6658 50  0001 L CNN
+F 3 "" H 1750 6750 50  0000 C CNN
+	1    1750 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6650 1350 6600
+Connection ~ 1350 6600
+Wire Wire Line
+	1350 6850 1350 6900
+Wire Wire Line
+	1250 6900 2150 6900
+Wire Wire Line
+	1750 6900 1750 6850
+Connection ~ 1350 6900
+Wire Wire Line
+	1750 6650 1750 6600
+Connection ~ 1750 6600
+Connection ~ 1750 6900
+$Comp
+L C_Small C29
+U 1 1 56F0227F
+P 2150 6750
+F 0 "C29" H 2242 6796 50  0000 L CNN
+F 1 ".47uF" H 2242 6704 50  0000 L CNN
+F 2 "engstad:0402" H 2150 6750 50  0001 C CNN
+F 3 "" H 2150 6750 50  0000 C CNN
+	1    2150 6750
+	1    0    0    -1  
+$EndComp
+Text Label 550  6600 0    50   ~ 0
+VCC2
+$Comp
+L C_Small C17
+U 1 1 56F02286
+P 1350 6750
+F 0 "C17" H 1442 6796 50  0000 L CNN
+F 1 "100uF" H 1442 6704 50  0000 L CNN
+F 2 "" H 1350 6750 50  0000 C CNN
+F 3 "" H 1350 6750 50  0000 C CNN
+	1    1350 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6600 2150 6650
+Wire Wire Line
+	2150 6900 2150 6850
+Wire Wire Line
+	550  7200 2150 7200
+$Comp
+L C_Small C24
+U 1 1 56F02315
+P 1750 7350
+F 0 "C24" H 1842 7396 50  0000 L CNN
+F 1 "4.7uF" H 1842 7304 50  0000 L CNN
+F 2 "engstad:0805" H 1842 7258 50  0001 L CNN
+F 3 "" H 1750 7350 50  0000 C CNN
+	1    1750 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7250 1350 7200
+Connection ~ 1350 7200
+Wire Wire Line
+	1350 7450 1350 7500
+Wire Wire Line
+	1250 7500 2150 7500
+Wire Wire Line
+	1750 7500 1750 7450
+Connection ~ 1350 7500
+Wire Wire Line
+	1750 7250 1750 7200
+Connection ~ 1750 7200
+Connection ~ 1750 7500
+$Comp
+L C_Small C30
+U 1 1 56F02326
+P 2150 7350
+F 0 "C30" H 2242 7396 50  0000 L CNN
+F 1 ".47uF" H 2242 7304 50  0000 L CNN
+F 2 "engstad:0402" H 2150 7350 50  0001 C CNN
+F 3 "" H 2150 7350 50  0000 C CNN
+	1    2150 7350
+	1    0    0    -1  
+$EndComp
+Text Label 550  7200 0    50   ~ 0
+VCC3
+$Comp
+L C_Small C18
+U 1 1 56F0232D
+P 1350 7350
+F 0 "C18" H 1442 7396 50  0000 L CNN
+F 1 "100uF" H 1442 7304 50  0000 L CNN
+F 2 "" H 1350 7350 50  0000 C CNN
+F 3 "" H 1350 7350 50  0000 C CNN
+	1    1350 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7200 2150 7250
+Wire Wire Line
+	2150 7500 2150 7450
+Text Label 5450 5050 2    50   ~ 0
+VCC0
+Text Label 9050 5150 2    50   ~ 0
+VCC1
+Text Label 5400 9750 2    50   ~ 0
+VCC2
+Text Label 9050 9800 2    50   ~ 0
+VCC3
+$Comp
+L GND #PWR023
+U 1 1 56F02EFA
+P 1250 4450
+F 0 "#PWR023" H 1250 4200 50  0001 C CNN
+F 1 "GND" H 1258 4276 50  0000 C CNN
+F 2 "" H 1250 4450 50  0000 C CNN
+F 3 "" H 1250 4450 50  0000 C CNN
+	1    1250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 56F02F66
+P 1250 5050
+F 0 "#PWR024" H 1250 4800 50  0001 C CNN
+F 1 "GND" H 1258 4876 50  0000 C CNN
+F 2 "" H 1250 5050 50  0000 C CNN
+F 3 "" H 1250 5050 50  0000 C CNN
+	1    1250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 56F03133
+P 1250 5700
+F 0 "#PWR025" H 1250 5450 50  0001 C CNN
+F 1 "GND" H 1258 5526 50  0000 C CNN
+F 2 "" H 1250 5700 50  0000 C CNN
+F 3 "" H 1250 5700 50  0000 C CNN
+	1    1250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 56F0326A
+P 1250 6300
+F 0 "#PWR026" H 1250 6050 50  0001 C CNN
+F 1 "GND" H 1258 6126 50  0000 C CNN
+F 2 "" H 1250 6300 50  0000 C CNN
+F 3 "" H 1250 6300 50  0000 C CNN
+	1    1250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 56F03341
+P 1250 6900
+F 0 "#PWR027" H 1250 6650 50  0001 C CNN
+F 1 "GND" H 1258 6726 50  0000 C CNN
+F 2 "" H 1250 6900 50  0000 C CNN
+F 3 "" H 1250 6900 50  0000 C CNN
+	1    1250 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 56F033D0
+P 1250 7500
+F 0 "#PWR028" H 1250 7250 50  0001 C CNN
+F 1 "GND" H 1258 7326 50  0000 C CNN
+F 2 "" H 1250 7500 50  0000 C CNN
+F 3 "" H 1250 7500 50  0000 C CNN
+	1    1250 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V2 #PWR029
+U 1 1 56FB05BC
+P 900 4100
+F 0 "#PWR029" H 900 3950 50  0001 C CNN
+F 1 "+1V2" H 918 4274 50  0000 C CNN
+F 2 "" H 900 4100 50  0000 C CNN
+F 3 "" H 900 4100 50  0000 C CNN
+	1    900  4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 900  4150
+Connection ~ 900  4750
+Connection ~ 900  5400
+Connection ~ 900  6000
+Connection ~ 900  6600
+Connection ~ 900  7200
+$Comp
+L +3V3 #PWR030
+U 1 1 56FB0A52
+P 900 5350
+F 0 "#PWR030" H 900 5200 50  0001 C CNN
+F 1 "+3V3" H 918 5524 50  0000 C CNN
+F 2 "" H 900 5350 50  0000 C CNN
+F 3 "" H 900 5350 50  0000 C CNN
+	1    900  5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR031
+U 1 1 56FB0ADC
+P 900 5950
+F 0 "#PWR031" H 900 5800 50  0001 C CNN
+F 1 "+3V3" H 918 6124 50  0000 C CNN
+F 2 "" H 900 5950 50  0000 C CNN
+F 3 "" H 900 5950 50  0000 C CNN
+	1    900  5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR032
+U 1 1 56FB0B41
+P 900 6550
+F 0 "#PWR032" H 900 6400 50  0001 C CNN
+F 1 "+3V3" H 918 6724 50  0000 C CNN
+F 2 "" H 900 6550 50  0000 C CNN
+F 3 "" H 900 6550 50  0000 C CNN
+	1    900  6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR033
+U 1 1 56FB0BA6
+P 900 7150
+F 0 "#PWR033" H 900 7000 50  0001 C CNN
+F 1 "+3V3" H 918 7324 50  0000 C CNN
+F 2 "" H 900 7150 50  0000 C CNN
+F 3 "" H 900 7150 50  0000 C CNN
+	1    900  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR034
+U 1 1 56FB0DAF
+P 900 4700
+F 0 "#PWR034" H 900 4550 50  0001 C CNN
+F 1 "+3V3" H 918 4874 50  0000 C CNN
+F 2 "" H 900 4700 50  0000 C CNN
+F 3 "" H 900 4700 50  0000 C CNN
+	1    900  4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4700 900  4750
+Wire Wire Line
+	900  4150 900  4100
+Wire Wire Line
+	900  5400 900  5350
+Wire Wire Line
+	900  6000 900  5950
+Wire Wire Line
+	900  6600 900  6550
+Wire Wire Line
+	900  7200 900  7150
+$EndSCHEMATC
