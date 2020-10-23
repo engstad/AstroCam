@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AstroCam-rescue)(type Legacy)(uri ${KIPRJMOD}/AstroCam-rescue.lib)(options "")(descr ""))
+  (lib (name @Engstad)(type Legacy)(uri "$(ENGSTADLIB)/engstad/engstad.lib")(options "")(descr ""))
+)

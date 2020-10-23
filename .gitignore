@@ -1,0 +1,8 @@
+*.bak
+*-cache.lib
+*.kicad_pcb-bak
+_autosave*
+*~
+*bak
+fp-info-cache
+.DS_Store
